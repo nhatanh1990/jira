@@ -1,0 +1,54 @@
+═══════════════════════════════════════════════════════════════
+  HƯỚNG DẪN SỬ DỤNG FILE HTML DOCUMENTATION
+═══════════════════════════════════════════════════════════════
+
+📄 FILE CHÍNH: DOCUMENTATION_STANDALONE.html
+
+✅ File này đã chứa SẴN TẤT CẢ nội dung (19 file markdown)
+✅ Không cần file bổ sung
+✅ Hoạt động độc lập
+
+🚀 CÁCH SỬ DỤNG:
+
+1. Double-click vào file DOCUMENTATION_STANDALONE.html
+2. File sẽ mở bằng trình duyệt web mặc định
+3. Nội dung sẽ hiển thị ngay lập tức
+
+📋 TÍNH NĂNG:
+
+✓ Mindmap cấu trúc (Mermaid)
+✓ Navigation menu theo thứ tự đọc
+✓ 19 tài liệu đầy đủ
+✓ Styling đẹp, responsive
+✓ Tìm kiếm và điều hướng dễ dàng
+
+📖 THỨ TỰ ĐỌC:
+
+Cho Admin/Manager:
+  1. Phiên Bản Cơ Bản hoặc Nâng Cao
+  2. Kịch Bản Triển Khai
+  3. Checklist Triển Khai
+  4. Effort Tracking
+  5. Story Point & Performance
+  6. Ma Trận Phân Quyền
+  7. Phân Tích Issue Types
+
+Cho Users:
+  1. Hướng Dẫn Member Mới
+  2. Tài Liệu Training
+  3. Kịch Bản Sử Dụng
+  4. Hướng Dẫn Triển Khai Jira
+  5. Bổ Sung ITIL & Quản Trị
+
+🔧 NẾU KHÔNG HIỂN THỊ:
+
+1. Kiểm tra console (F12) để xem lỗi
+2. Đảm bảo có kết nối internet (cần để load Mermaid.js và marked.js)
+3. Thử trình duyệt khác (Chrome, Firefox, Safari, Edge)
+
+🔄 TẠO LẠI FILE (nếu cập nhật markdown):
+
+Chạy lệnh:
+  python3 generate_standalone_html.py
+
+═══════════════════════════════════════════════════════════════

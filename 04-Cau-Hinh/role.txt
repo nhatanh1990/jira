@@ -1,0 +1,83 @@
+1. Product Owner (PO)
+Quyền:
+	•	Browse project
+	•	Create/Edit Issue
+	•	Move Issue
+	•	Manage Components
+	•	Edit Version / Release notes
+	•	Transition issue bất kỳ
+	•	Approve yêu cầu Change
+	•	Xem toàn bộ dashboard
+Không có quyền:
+	•	Xoá issue
+	•	Sửa hệ thống / cấu hình workflow
+	•	Admin permission
+2. Developer Team
+Quyền:
+	•	Browse project
+	•	Create/Edit Story, Task, Bug
+	•	Log Work
+	•	Transition issue trong luồng Dev
+	•	Tạo branch trên GitLab từ Jira
+	•	Tạo Merge Request (MR)
+	•	Xem Incident nhưng không sửa
+	•	Xem Change Request nhưng không approve
+
+Không có quyền:
+	•	Xử lý Incident
+	•	Tạo Change Request có scope vận hành
+	•	Approve Change
+	•	Triển khai release production
+3. QA / Tester
+Quyền:
+	•	Browse project
+	•	Edit issue phần QA (Testing results)
+	•	Transition: Testing/Ready for Release
+	•	Tạo Bug
+	•	Log Work
+Không có quyền:
+	•	Deploy
+	•	Approve Release
+	•	Can thiệp Incident
+4. Support / Customer Service
+Quyền:
+	•	Create/Handle Service Request
+	•	Create Incident (chỉ SEV2–SEV3)
+	•	Comment / Upload log
+	•	Transition issue trong workflow SR
+	•	Log Work
+Không có quyền:
+	•	Chỉnh sửa Story/Task
+	•	Xử lý Change Request
+	•	Release hoặc staging deploy
+	•	Tạo Epic
+5. SRE / DevOps
+Quyền:
+	•	Handle Incident (SEV1–SEV2)
+	•	Transition Incident → Investigating → Mitigated → Resolved
+	•	Approve/Implement Change Request (deployment)
+	•	Run pipeline GitLab
+	•	Manage environments (Prod/Staging)
+	•	View logs & alerts
+	•	Create Ops Task
+Không có quyền:
+	•	Can thiệp backlog dev
+	•	Edit PRD
+	•	Xoá Epic/Story
+6. Change Advisory Board (CAB)
+Quyền đặc thù:
+	•	Approve/Reject Change Request
+	•	Approve Emergency Change
+	•	Comment required fields
+	•	Block deploy nếu rủi ro cao
+	•	Xem logs, RCA
+Gồm:
+PO + Dev Lead/SRE Lead + PM/VP Eng tùy công ty.
+7. Jira Admin
+Quyền cao nhất:
+	•	Sửa workflow
+	•	Tạo project mới
+	•	Tạo permission scheme
+	•	Tạo custom fields
+	•	Thay đổi global configuration
+KHÔNG tham gia vận hành sản phẩm → tránh xung đột quy trình.

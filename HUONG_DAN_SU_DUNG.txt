@@ -1,0 +1,41 @@
+═══════════════════════════════════════════════════════════════
+  HƯỚNG DẪN SỬ DỤNG - WEBSITE TÀI LIỆU JIRA
+═══════════════════════════════════════════════════════════════
+
+📄 FILE: index.html
+
+🚀 CÁCH SỬ DỤNG (ĐƠN GIẢN):
+
+1. Double-click vào file index.html
+2. File sẽ mở trong trình duyệt
+3. Click vào menu bên trái để xem tài liệu
+
+✅ XONG! Không cần cài đặt gì thêm.
+
+═══════════════════════════════════════════════════════════════
+
+📋 TÍNH NĂNG:
+
+✓ 20 tài liệu đầy đủ
+✓ Navigation menu đơn giản
+✓ Tất cả nội dung trong 1 file
+✓ Không cần file bổ sung
+✓ Responsive - hoạt động trên mobile
+
+═══════════════════════════════════════════════════════════════
+
+⚠️ LƯU Ý:
+
+- Cần kết nối internet để load thư viện marked.js
+- Nội dung tài liệu đã được embed sẵn trong file
+- File size: ~315 KB
+
+═══════════════════════════════════════════════════════════════
+
+🔧 NẾU KHÔNG HOẠT ĐỘNG:
+
+1. Kiểm tra kết nối internet
+2. Thử trình duyệt khác (Chrome, Firefox, Edge)
+3. Refresh trang (F5)
+
+═══════════════════════════════════════════════════════════════

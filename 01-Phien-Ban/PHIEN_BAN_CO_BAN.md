@@ -22,10 +22,10 @@
 4. **Bug** - Lỗi cần sửa
 
 #### ITIL Cơ Bản (4 types):
-5. **Incident** - Sự cố (SEV1-SEV4)
-6. **Change Request** - Yêu cầu thay đổi
-7. **Service Request** - Yêu cầu dịch vụ (có thể dùng cho Operations)
-8. **Service Order** - Đơn hàng dịch vụ
+5. **Incident** - Sự cố (SEV1-SEV4) - **Có SLA**: First Response (15 phút - 1 ngày), Resolution (4 giờ - 3 ngày)
+6. **Change Request** - Yêu cầu thay đổi - **Có SLA**: Review (2 giờ - 2 ngày), Approval (4 giờ - 3 ngày), Implementation (1-5 ngày)
+7. **Service Request** - Yêu cầu dịch vụ (có thể dùng cho Operations) - **Có SLA**: Response (1-4 giờ), Fulfillment (4 giờ - 5 ngày)
+8. **Service Order** - Đơn hàng dịch vụ - **Có SLA**: Processing (2 giờ), Payment (1 ngày), Production (1 ngày), Delivery (theo terms)
 
 **Lưu ý**: Product Research, Product Development, Project Deployment, Project Operations được thay thế bằng Epic/Story/Task với custom fields (Work Type, Phase, Customer). Xem PHAN_TICH_ISSUE_TYPES.md để biết chi tiết.
 
@@ -36,15 +36,23 @@
 #### Effort Fields (Time Tracking):
 - **Research Effort** - Công sức nghiên cứu (hours)
 - **Development Effort** - Công sức phát triển (hours)
+- **Testing Effort** - Công sức testing (hours)
 - **Deployment Effort** - Công sức triển khai (hours)
 - **Operations Effort** - Công sức vận hành (hours)
+- **Review Effort** - Công sức review (hours)
+- **Documentation Effort** - Công sức documentation (hours)
+- **Coordination Effort** - Công sức coordination (hours)
 
 #### Calculated Fields:
-- **Total Effort** - Tổng effort (Research + Development + Deployment + Operations)
+- **Total Effort** - Tổng effort (Research + Development + Testing + Deployment + Operations + Review + Documentation + Coordination)
 - **Research Effort %** - % effort nghiên cứu
 - **Development Effort %** - % effort phát triển
+- **Testing Effort %** - % effort testing
 - **Deployment Effort %** - % effort triển khai
 - **Operations Effort %** - % effort vận hành
+- **Review Effort %** - % effort review
+- **Documentation Effort %** - % effort documentation
+- **Coordination Effort %** - % effort coordination
 
 #### Classification Fields:
 - **Work Type**: Product, Project, Support, ITIL (QUAN TRỌNG - dùng để phân biệt loại công việc)
@@ -164,15 +172,23 @@ Order Received → Processing → In Production → Delivered → Closed
 #### Epic:
 - Total Research Effort (calculated từ children)
 - Total Development Effort (calculated từ children)
+- Total Testing Effort (calculated từ children)
 - Total Deployment Effort (calculated từ children)
 - Total Operations Effort (calculated từ children)
+- Total Review Effort (calculated từ children)
+- Total Documentation Effort (calculated từ children)
+- Total Coordination Effort (calculated từ children)
 - Total Effort (calculated)
 
 #### Story/Task:
 - Research Effort (Time Tracking)
 - Development Effort (Time Tracking)
+- Testing Effort (Time Tracking)
 - Deployment Effort (Time Tracking)
 - Operations Effort (Time Tracking)
+- Review Effort (Time Tracking)
+- Documentation Effort (Time Tracking)
+- Coordination Effort (Time Tracking)
 - Total Effort (calculated)
 
 **Lưu ý**: Effort tracking cho Product Research, Product Development, Project Deployment, Project Operations được thực hiện thông qua Epic/Story/Task:
@@ -218,7 +234,7 @@ Order Received → Processing → In Production → Delivered → Closed
 ### Phase 1: Setup Cơ Bản
 - [ ] Tạo Project
 - [ ] Tạo 8 Issue Types (Epic, Story, Task, Bug, Incident, Change Request, Service Request, Service Order)
-- [ ] Tạo Effort Fields (Research, Development, Deployment, Operations)
+- [ ] Tạo Effort Fields (Research, Development, Testing, Deployment, Operations, Review, Documentation, Coordination)
 - [ ] Tạo Calculated Fields (Total Effort, Effort %)
 - [ ] Tạo Classification Fields (Work Type, Phase, Customer, Research Phase, Development Phase, Deployment Phase, Operations Type)
 

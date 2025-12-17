@@ -86,9 +86,16 @@
   - Requested By (User Picker)
   - Requested Date (Date Picker)
   - Service Catalog Item
-  - SLA Target (Date)
   - Priority (P1-P4)
   - Approval Status (Pending, Approved, Rejected)
+  - **SLA Fields**:
+    - SLA Status (On Track, At Risk, Breached)
+    - Response Time Target (hours) - Auto-set dựa trên Request Type
+    - Response Time Actual (hours) - Auto-calculated
+    - Fulfillment Time Target (hours/days) - Auto-set dựa trên Request Type
+    - Fulfillment Time Actual (hours/days) - Auto-calculated
+    - SLA Target Date (Date) - Auto-calculated
+    - SLA Breach (Yes/No) - Auto-set
 
 #### **Service Order (SO)**
 - **Mục đích**: Đơn hàng dịch vụ có tính phí
@@ -101,6 +108,16 @@
   - Payment Status (Pending, Paid, Cancelled)
   - Delivery Date (Date Picker)
   - Manufacturing Line (Text)
+  - **SLA Fields**:
+    - SLA Status (On Track, At Risk, Breached)
+    - Processing Time Target (hours) - 2 giờ
+    - Processing Time Actual (hours) - Auto-calculated
+    - Payment Confirmation Time Target (days) - 1 ngày
+    - Payment Confirmation Time Actual (days) - Auto-calculated
+    - Production Start Time Target (days) - 1 ngày sau payment
+    - Production Start Time Actual (days) - Auto-calculated
+    - Delivery SLA Status (On Track, At Risk, Breached) - Dựa trên Delivery Date
+    - SLA Breach (Yes/No) - Auto-set
 
 #### **Incident**
 - **Mục đích**: Sự cố cần xử lý theo ITIL
@@ -112,10 +129,17 @@
   - Incident Category (Hardware, Software, Network, AI Service, Manufacturing System, Other)
   - Root Cause (Text Area)
   - Resolution (Text Area)
-  - Resolution Time (hours) - Auto-calculated
-  - First Response Time (minutes) - Auto-calculated
   - Affected Services (Multi-select)
   - Related Change Request (Issue Link)
+  - **SLA Fields**:
+    - SLA Status (On Track, At Risk, Breached)
+    - First Response Time Target (minutes) - Auto-set dựa trên Severity
+    - First Response Time Actual (minutes) - Auto-calculated
+    - Resolution Time Target (hours) - Auto-set dựa trên Severity
+    - Resolution Time Actual (hours) - Auto-calculated
+    - Escalation Level (None, Level 1, Level 2, Level 3)
+    - Escalation Reason (Text Area)
+    - SLA Breach (Yes/No) - Auto-set
 
 #### **Change Request (CR)**
 - **Mục đích**: Yêu cầu thay đổi hệ thống theo ITIL
@@ -130,6 +154,15 @@
   - Implementation Date (Date Picker)
   - Post-Implementation Review (Text Area)
   - Related Incident (Issue Link)
+  - **SLA Fields**:
+    - SLA Status (On Track, At Risk, Breached)
+    - Review Time Target (hours/days) - Auto-set dựa trên Change Type
+    - Review Time Actual (hours/days) - Auto-calculated
+    - Approval Time Target (hours/days) - Auto-set dựa trên Change Type
+    - Approval Time Actual (hours/days) - Auto-calculated
+    - Implementation Time Target (days) - Auto-set dựa trên Change Type
+    - Implementation Time Actual (days) - Auto-calculated
+    - SLA Breach (Yes/No) - Auto-set
 
 ---
 
@@ -752,11 +785,15 @@ Draft → Submitted → Under Review → CAB Review → Approved → Implementat
 - P3: (Impact=Medium) OR (Urgency=Medium)
 - P4: Impact=Low AND Urgency=Low
 
-**SLA Configuration**:
-- SEV1: First Response 15 phút, Resolution 4 giờ
-- SEV2: First Response 1 giờ, Resolution 8 giờ
-- SEV3: First Response 4 giờ, Resolution 24 giờ
-- SEV4: First Response 1 ngày, Resolution 3 ngày
+**SLA Configuration** (chi tiết xem SLA_CONFIGURATION.md):
+- **SEV1 (Critical)**: First Response 15 phút, Resolution 4 giờ, Escalation 30 phút
+- **SEV2 (High)**: First Response 1 giờ, Resolution 8 giờ, Escalation 2 giờ
+- **SEV3 (Medium)**: First Response 4 giờ, Resolution 24 giờ, Escalation 8 giờ
+- **SEV4 (Low)**: First Response 1 ngày (business hours), Resolution 3 ngày, Escalation 2 ngày
+
+**Business Hours**:
+- SEV1-SEV2: 24/7 (tất cả thời gian)
+- SEV3-SEV4: Business Hours (8:00-18:00, Monday-Friday)
 
 **Automation Rules**:
 - Auto-assign SEV1 → SRE team
@@ -782,6 +819,15 @@ Draft → Submitted → Under Review → CAB Review → Approved → Implementat
 - **High**: Ảnh hưởng lớn, rollback phức tạp
 - **Critical**: Ảnh hưởng toàn hệ thống, rollback khó
 
+**SLA Configuration** (chi tiết xem SLA_CONFIGURATION.md):
+- **Standard Change**: Implementation 2 ngày (pre-approved)
+- **Normal Change**: Review 2 ngày, Approval 3 ngày, Implementation 5 ngày (Total: 10 ngày)
+- **Emergency Change**: Review 2 giờ, Approval 4 giờ, Implementation 1 ngày (Total: 1.5 ngày)
+
+**Business Hours**:
+- Standard/Normal Change: Business Hours (8:00-18:00, Monday-Friday)
+- Emergency Change: 24/7 (tất cả thời gian)
+
 **Post-Implementation Review**:
 - Review sau 1 tuần implementation
 - Đánh giá success/failure
@@ -801,10 +847,13 @@ Draft → Submitted → Under Review → CAB Review → Approved → Implementat
 - Service Provisioning → PO/Manager approval
 - Information Request → Auto-approve
 
-**SLA Targets**:
-- Access Request: 1 ngày
-- Information Request: 4 giờ
-- Service Provisioning: 3 ngày
+**SLA Targets** (chi tiết xem SLA_CONFIGURATION.md):
+- **Access Request**: Response 2 giờ, Fulfillment 1 ngày (Total: 1 ngày)
+- **Information Request**: Response 1 giờ, Fulfillment 4 giờ (Total: 4 giờ)
+- **Service Provisioning**: Response 4 giờ, Fulfillment 3 ngày (Total: 3 ngày)
+- **Other**: Response 4 giờ, Fulfillment 5 ngày (Total: 5 ngày)
+
+**Business Hours**: Tất cả Request Types - Business Hours (8:00-18:00, Monday-Friday)
 
 ### 9.4. Service Order Management
 
@@ -816,6 +865,15 @@ Draft → Submitted → Under Review → CAB Review → Approved → Implementat
 5. Shipped
 6. Delivered
 7. Closed
+
+**SLA Configuration** (chi tiết xem SLA_CONFIGURATION.md):
+- **Order Received → Processing**: 2 giờ
+- **Processing → Payment Confirmed**: 1 ngày
+- **Payment Confirmed → In Production**: 1 ngày
+- **In Production → Shipped**: Theo Delivery Date trong order terms
+- **Shipped → Delivered**: Theo shipping terms
+
+**Business Hours**: Tất cả stages - Business Hours (8:00-18:00, Monday-Friday)
 
 **Integration Points**:
 - Link với Service Request (nếu có)

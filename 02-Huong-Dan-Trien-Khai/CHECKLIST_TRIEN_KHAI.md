@@ -252,13 +252,16 @@
 - [ ] Setup Impact levels
 - [ ] Setup Urgency levels
 - [ ] Setup Priority calculation (Impact × Urgency)
-- [ ] Configure SLA rules:
-  - [ ] SEV1: First Response 15 min, Resolution 4 hours
-  - [ ] SEV2: First Response 1 hour, Resolution 8 hours
-  - [ ] SEV3: First Response 4 hours, Resolution 24 hours
-  - [ ] SEV4: First Response 1 day, Resolution 3 days
+- [ ] Configure SLA rules (xem SLA_CONFIGURATION.md):
+  - [ ] SEV1: First Response 15 min, Resolution 4 hours, Escalation 30 min
+  - [ ] SEV2: First Response 1 hour, Resolution 8 hours, Escalation 2 hours
+  - [ ] SEV3: First Response 4 hours, Resolution 24 hours, Escalation 8 hours
+  - [ ] SEV4: First Response 1 day, Resolution 3 days, Escalation 2 days
+- [ ] Setup SLA custom fields (SLA Status, First Response Time Target/Actual, Resolution Time Target/Actual, Escalation Level)
+- [ ] Configure business hours (SEV1-SEV2: 24/7, SEV3-SEV4: Business Hours)
 - [ ] Setup auto-assignment rules
 - [ ] Setup escalation rules
+- [ ] Setup SLA automation (auto-calculate SLA Status, auto-escalate)
 
 ### 7.2. Change Management
 - [ ] Setup Change Types (Standard, Normal, Emergency)
@@ -268,17 +271,39 @@
 - [ ] Add CAB members
 - [ ] Setup approval workflow
 - [ ] Setup Emergency Change process
+- [ ] Configure SLA rules (xem SLA_CONFIGURATION.md):
+  - [ ] Standard Change: Implementation 2 days
+  - [ ] Normal Change: Review 2 days, Approval 3 days, Implementation 5 days (Total: 10 days)
+  - [ ] Emergency Change: Review 2 hours, Approval 4 hours, Implementation 1 day (Total: 1.5 days)
+- [ ] Setup SLA custom fields (SLA Status, Review/Approval/Implementation Time Target/Actual)
+- [ ] Configure business hours (Standard/Normal: Business Hours, Emergency: 24/7)
+- [ ] Setup SLA automation
 - [ ] Configure post-implementation review
 
 ### 7.3. Service Request
-- [ ] Setup Request Types
+- [ ] Setup Request Types (Access Request, Information Request, Service Provisioning, Other)
 - [ ] Setup Service Catalog items
 - [ ] Configure approval workflow
-- [ ] Setup SLA targets
+- [ ] Configure SLA rules (xem SLA_CONFIGURATION.md):
+  - [ ] Access Request: Response 2 hours, Fulfillment 1 day
+  - [ ] Information Request: Response 1 hour, Fulfillment 4 hours
+  - [ ] Service Provisioning: Response 4 hours, Fulfillment 3 days
+  - [ ] Other: Response 4 hours, Fulfillment 5 days
+- [ ] Setup SLA custom fields (SLA Status, Response/Fulfillment Time Target/Actual, SLA Target Date)
+- [ ] Configure business hours (Business Hours: 8:00-18:00, Monday-Friday)
+- [ ] Setup SLA automation
 
 ### 7.4. Service Order
 - [ ] Setup Order lifecycle
 - [ ] Configure payment status workflow
+- [ ] Configure SLA rules (xem SLA_CONFIGURATION.md):
+  - [ ] Order Received → Processing: 2 hours
+  - [ ] Processing → Payment Confirmed: 1 day
+  - [ ] Payment Confirmed → In Production: 1 day
+  - [ ] Delivery: Theo Delivery Date trong order terms
+- [ ] Setup SLA custom fields (SLA Status, Processing/Payment/Production Time Target/Actual, Delivery SLA Status)
+- [ ] Configure business hours (Business Hours: 8:00-18:00, Monday-Friday)
+- [ ] Setup SLA automation
 - [ ] Link với Service Request (nếu cần)
 
 ---
@@ -300,11 +325,24 @@
 - [ ] Priority (Incident) → Auto-calculate từ Impact + Urgency
 - [ ] Resolution Time → Auto-calculate từ timestamps
 - [ ] First Response Time → Auto-calculate từ timestamps
+- [ ] SLA Status → Auto-calculate (On Track, At Risk, Breached)
+- [ ] SLA Target Date → Auto-calculate từ Created Date + SLA Target
+- [ ] SLA Breach → Auto-set khi vượt SLA
 
-### 8.4. Notification Rules
+### 8.4. SLA Automation Rules
+- [ ] Auto-calculate SLA Status (At Risk = 80% target, Breached = >100% target)
+- [ ] Auto-escalate khi SLA At Risk
+- [ ] Auto-escalate khi SLA Breached
+- [ ] Auto-notify khi SLA At Risk (2 giờ trước breach)
+- [ ] Auto-notify khi SLA Breached
+- [ ] Auto-assign dựa trên SLA status
+
+### 8.5. Notification Rules
 - [ ] SEV1 Incident → Notify SRE team + Management
 - [ ] Change Request approved → Notify implementation team
 - [ ] SLA breach → Escalate to manager
+- [ ] SLA At Risk → Notify assignee + team lead
+- [ ] Daily SLA report → Gửi báo cáo SLA compliance hàng ngày
 
 ---
 

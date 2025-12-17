@@ -76,21 +76,33 @@
 #### Effort Fields (Time Tracking):
 - **Research Effort** - Công sức nghiên cứu (hours)
 - **Development Effort** - Công sức phát triển (hours)
+- **Testing Effort** - Công sức testing (hours)
 - **Deployment Effort** - Công sức triển khai (hours)
 - **Operations Effort** - Công sức vận hành (hours)
+- **Review Effort** - Công sức review (hours)
+- **Documentation Effort** - Công sức documentation (hours)
+- **Coordination Effort** - Công sức coordination (hours)
 
 #### Calculated Fields:
-- **Total Effort** - Tổng effort (Research + Development + Deployment + Operations)
+- **Total Effort** - Tổng effort (Research + Development + Testing + Deployment + Operations + Review + Documentation + Coordination)
 - **Research Effort %** - % effort nghiên cứu
 - **Development Effort %** - % effort phát triển
+- **Testing Effort %** - % effort testing
 - **Deployment Effort %** - % effort triển khai
 - **Operations Effort %** - % effort vận hành
+- **Review Effort %** - % effort review
+- **Documentation Effort %** - % effort documentation
+- **Coordination Effort %** - % effort coordination
 
 #### Advanced Effort Fields:
 - **Estimated Research Effort** - Ước lượng nghiên cứu
 - **Estimated Development Effort** - Ước lượng phát triển
+- **Estimated Testing Effort** - Ước lượng testing
 - **Estimated Deployment Effort** - Ước lượng triển khai
 - **Estimated Operations Effort** - Ước lượng vận hành
+- **Estimated Review Effort** - Ước lượng review
+- **Estimated Documentation Effort** - Ước lượng documentation
+- **Estimated Coordination Effort** - Ước lượng coordination
 - **Effort Variance** - Chênh lệch (Actual - Estimated)
 - **Effort Efficiency** - Hiệu quả effort
 
@@ -245,8 +257,12 @@ Xem chi tiết trong **BO_SUNG_ITIL_VA_QUAN_TRI.md** và **WORKFLOW_DIAGRAMS.md*
 #### Tất cả Issue Types:
 - Research Effort (Time Tracking)
 - Development Effort (Time Tracking)
+- Testing Effort (Time Tracking)
 - Deployment Effort (Time Tracking)
 - Operations Effort (Time Tracking)
+- Review Effort (Time Tracking)
+- Documentation Effort (Time Tracking)
+- Coordination Effort (Time Tracking)
 - Total Effort (calculated)
 - Estimated Effort fields (cho planning)
 - Effort Variance (calculated)
@@ -255,8 +271,12 @@ Xem chi tiết trong **BO_SUNG_ITIL_VA_QUAN_TRI.md** và **WORKFLOW_DIAGRAMS.md*
 #### Epic:
 - Total Research Effort (calculated từ children)
 - Total Development Effort (calculated từ children)
+- Total Testing Effort (calculated từ children)
 - Total Deployment Effort (calculated từ children)
 - Total Operations Effort (calculated từ children)
+- Total Review Effort (calculated từ children)
+- Total Documentation Effort (calculated từ children)
+- Total Coordination Effort (calculated từ children)
 - Total Effort (calculated)
 - Effort Distribution (pie chart)
 
@@ -335,7 +355,7 @@ Xem chi tiết trong **BO_SUNG_ITIL_VA_QUAN_TRI.md** và **WORKFLOW_DIAGRAMS.md*
 ### Phase 1: Setup Cơ Bản
 - [ ] Tạo Project
 - [ ] Tạo 47 Issue Types
-- [ ] Tạo Effort Fields (Research, Development, Deployment, Operations)
+- [ ] Tạo Effort Fields (Research, Development, Testing, Deployment, Operations, Review, Documentation, Coordination)
 - [ ] Tạo Calculated Fields (Total Effort, Effort %, Variance, Efficiency)
 - [ ] Tạo Estimated Effort Fields
 - [ ] Tạo Classification Fields (Work Type, Phase, Customer, Product, Cost Center)

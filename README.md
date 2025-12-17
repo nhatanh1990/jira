@@ -9,18 +9,40 @@ Tài liệu được tổ chức thành các folder theo mục đích:
 ```
 jira/
 ├── README.md (file này)
+├── index.html  ⭐⭐ WEBSITE TĨNH - MỞ FILE NÀY ĐỂ XEM TÀI LIỆU
+├── generate_html.py    # Script tạo file HTML
 ├── 01-Phien-Ban/              # Phiên bản và phân tích
 ├── 02-Huong-Dan-Trien-Khai/   # Hướng dẫn triển khai
 ├── 03-Huong-Dan-Su-Dung/      # Hướng dẫn sử dụng và training
-├── 04-Cau-Hinh/               # Cấu hình, permissions, workflows
+├── 04-Cau-Hinh/               # Cấu hình, permissions, workflows, SLA
 ├── 05-Effort-Tracking/        # Effort tracking
 ├── 06-ITIL-Quan-Tri/          # ITIL và quản trị
 └── 07-Reference/              # Tài liệu tham khảo
 ```
 
+## 🚀 SỬ DỤNG NGAY (3 BƯỚC)
+
+1. **Double-click** vào file `index.html`
+2. File sẽ mở trong trình duyệt
+3. Click vào menu bên trái để xem tài liệu
+
+**✅ Xong!** Tất cả 20 tài liệu đã được tích hợp sẵn trong file.
+
+**⚠️ Lưu ý**: Cần kết nối internet để load thư viện marked.js (chỉ để chuyển đổi Markdown). Nội dung tài liệu đã được embed sẵn trong file.
+
+**💡 Mẹo**: Sử dụng `Ctrl+F` (hoặc `Cmd+F` trên Mac) để tìm kiếm nội dung.
+
 ---
 
 ## ⭐ BẮT ĐẦU TỪ ĐÂY
+
+### 🚀 **CÁCH NHANH NHẤT: Sử dụng File HTML**
+
+**Double-click** vào file `DOCUMENTATION_STANDALONE.html` để xem toàn bộ tài liệu với navigation dễ dàng!
+
+📖 **Hướng dẫn chi tiết**: Xem [README_START_HERE.md](./README_START_HERE.md) hoặc [HUONG_DAN_SU_DUNG_HTML.md](./HUONG_DAN_SU_DUNG_HTML.md)
+
+---
 
 ### 1. [01-Phien-Ban/PHIEN_BAN_CO_BAN.md](./01-Phien-Ban/PHIEN_BAN_CO_BAN.md) - Phiên bản Cơ Bản
    - 8 Issue Types (tối ưu từ 12)
@@ -112,14 +134,22 @@ jira/
    - Chi tiết quyền hạn cho từng role
    - Phân quyền cho cả 2 phiên bản (Cơ Bản & Nâng Cao)
 
-2. **WORKFLOW_DIAGRAMS.md** - Sơ đồ workflows
+2. **SLA_CONFIGURATION.md** ⭐ **QUAN TRỌNG - SLA**
+   - Cấu hình SLA chi tiết cho tất cả 4 ITIL issue types cơ bản
+   - SLA targets, automation rules, escalation rules
+   - Custom fields, time tracking, reporting
+   - JQL queries cho SLA monitoring
+
+3. **WORKFLOW_DIAGRAMS.md** - Sơ đồ workflows
    - Workflow diagrams
    - Workflow relationships
    - Status mapping
 
-3. **role.txt** - Định nghĩa các Role và Permissions
+4. **role.txt** - Định nghĩa các Role và Permissions
    - 7 roles cơ bản
    - Quyền hạn cho từng role
+
+**Lưu ý**: Tất cả tài liệu đã được tích hợp vào file `DOCUMENTATION_STANDALONE.html` để dễ dàng xem và điều hướng.
 
 ---
 

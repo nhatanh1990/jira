@@ -281,19 +281,19 @@ Phân tích 4 issue types:
 - ❌ Project Deployment
 - ❌ Project Operations
 
-### Phiên Bản Nâng Cao: 43 Issue Types (từ 47)
+### Phiên Bản Nâng Cao: 39 Issue Types (từ 47, loại bỏ 8 types)
 
 **Loại bỏ**:
 - ❌ Product Research
 - ❌ Product Development
 - ❌ Product Deployment
 - ❌ Product Operations
+- ❌ Project Research
+- ❌ Project Development
+- ❌ Project Deployment
+- ❌ Project Operations
 
-**Giữ lại**:
-- ✅ Project Research (nếu cần, hoặc dùng Epic/Story)
-- ✅ Project Development (nếu cần, hoặc dùng Story)
-- ✅ Project Deployment (nếu cần, hoặc dùng Epic/Story/Task)
-- ✅ Project Operations (nếu cần, hoặc dùng Task/Service Request)
+**Thay thế bằng**: Epic/Story/Task với custom fields (Work Type, Phase, Customer)
 
 ---
 
@@ -345,8 +345,8 @@ Phân tích 4 issue types:
 
 **Kết quả**:
 - Giảm từ 12 → 8 issue types (Cơ bản)
-- Giảm từ 47 → 43 issue types (Nâng cao)
-- Vẫn track effort đầy đủ
+- Giảm từ 47 → 39 issue types (Nâng cao)
+- Vẫn track effort đầy đủ (8 effort fields)
 - Hệ thống đơn giản hơn, dễ sử dụng hơn
 
 ---

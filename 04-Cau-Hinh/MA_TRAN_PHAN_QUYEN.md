@@ -13,7 +13,9 @@
 
 ---
 
-## PHIÊN BẢN CƠ BẢN - MA TRẬN PHÂN QUYỀN (7 Roles × 12 Issue Types)
+## PHIÊN BẢN CƠ BẢN - MA TRẬN PHÂN QUYỀN (7 Roles × 8 Issue Types)
+
+**Lưu ý**: Product Research, Product Development, Project Deployment, Project Operations đã được LOẠI BỎ và thay thế bằng Epic/Story/Task với custom fields (Work Type, Phase, Customer). Xem PHAN_TICH_ISSUE_TYPES.md để biết chi tiết.
 
 | Issue Type | Product Owner | Developer | QA/Tester | Support | SRE/DevOps | CAB | Jira Admin |
 |------------|---------------|-----------|-----------|---------|------------|-----|------------|
@@ -25,14 +27,18 @@
 | **Change Request** | ✅ Create/Edit<br>✅ Approve<br>✅ Transition | ✅ View (read-only) | ❌ | ❌ | ✅ Create (Ops scope)<br>✅ Approve (deployment)<br>✅ Transition | ✅ Approve/Reject<br>✅ Transition (CAB Review) | ✅ All |
 | **Service Request** | ✅ View<br>✅ Approve (nếu cần) | ❌ | ❌ | ✅ Create/Edit<br>✅ Transition | ❌ | ❌ | ✅ All |
 | **Service Order** | ✅ View | ❌ | ❌ | ✅ View | ❌ | ❌ | ✅ All |
-| **Product Research** | ✅ Create/Edit<br>✅ Transition<br>✅ Assign | ⚠️ View<br>⚠️ Edit (nếu assigned) | ❌ | ❌ | ❌ | ❌ | ✅ All |
-| **Product Development** | ✅ Create/Edit<br>✅ Transition<br>✅ Assign | ✅ Create/Edit<br>✅ Transition (Dev flow)<br>✅ Assign (self) | ✅ Edit (Testing results)<br>✅ Transition (Testing → Ready) | ❌ | ⚠️ View | ❌ | ✅ All |
-| **Project Deployment** | ✅ Create/Edit<br>✅ Transition<br>✅ Assign | ⚠️ View<br>⚠️ Edit (nếu assigned) | ❌ | ❌ | ✅ Create/Edit<br>✅ Transition<br>✅ Assign | ❌ | ✅ All |
-| **Project Operations** | ✅ View | ❌ | ❌ | ✅ Create/Edit<br>✅ Transition | ✅ Create/Edit<br>✅ Transition | ❌ | ✅ All |
+
+**Ghi chú về Epic/Story/Task với Custom Fields**:
+- **Epic/Story với Work Type=Product, Phase=Research**: Thay thế Product Research
+- **Story với Work Type=Product, Phase=Development**: Thay thế Product Development
+- **Epic/Story/Task với Work Type=Project, Phase=Deployment**: Thay thế Project Deployment
+- **Task/Service Request với Work Type=Project, Phase=Operations**: Thay thế Project Operations
 
 ---
 
-## PHIÊN BẢN NÂNG CAO - MA TRẬN PHÂN QUYỀN (12 Roles × 47 Issue Types)
+## PHIÊN BẢN NÂNG CAO - MA TRẬN PHÂN QUYỀN (12 Roles × 39 Issue Types)
+
+**Lưu ý**: Product Research, Product Development, Product Deployment, Product Operations, Project Research, Project Development, Project Deployment, Project Operations đã được LOẠI BỎ và thay thế bằng Epic/Story/Task với custom fields (Work Type, Phase, Customer). Xem PHAN_TICH_ISSUE_TYPES.md để biết chi tiết.
 
 ### Roles:
 1. Product Owner
@@ -48,7 +54,7 @@
 11. Service Manager
 12. Security Officer
 
-### Issue Types (47):
+### Issue Types (39 - đã loại bỏ 8 types):
 
 | Issue Type | PO | Dev | QA | Support | SRE | CAB | Admin | Problem Mgr | Knowledge Mgr | Change Mgr | Service Mgr | Security |
 |------------|----|-----|----|---------|-----|-----|-------|-------------|---------------|------------|-------------|----------|
@@ -87,41 +93,48 @@
 | **Compliance Audit** | ✅ View | ❌ | ❌ | ❌ | ❌ | ❌ | ✅ All | ❌ | ❌ | ❌ | ❌ | ✅ Create/Edit/Transition |
 | **Requirement** | ✅ Create/Edit/Transition | ✅ View | ✅ View | ❌ | ❌ | ❌ | ✅ All | ❌ | ❌ | ❌ | ❌ | ❌ |
 | **Test Case** | ✅ View | ✅ View | ✅ Create/Edit/Transition | ❌ | ❌ | ❌ | ✅ All | ❌ | ❌ | ❌ | ❌ | ❌ |
-| **Product Research** | ✅ Create/Edit/Transition | ✅ View | ❌ | ❌ | ❌ | ❌ | ✅ All | ❌ | ❌ | ❌ | ❌ | ❌ |
-| **Product Development** | ✅ Create/Edit/Transition | ✅ Create/Edit/Transition | ✅ Edit (Testing) | ❌ | ✅ View | ❌ | ✅ All | ❌ | ❌ | ❌ | ❌ | ❌ |
-| **Product Deployment** | ✅ Create/Edit/Transition | ✅ View | ✅ View | ❌ | ✅ Create/Edit/Transition | ❌ | ✅ All | ❌ | ❌ | ❌ | ✅ View | ❌ |
-| **Product Operations** | ✅ View | ❌ | ❌ | ❌ | ✅ Create/Edit/Transition | ❌ | ✅ All | ❌ | ❌ | ❌ | ✅ View | ❌ |
-| **Project Research** | ✅ Create/Edit/Transition | ✅ View | ❌ | ✅ View | ❌ | ❌ | ✅ All | ❌ | ❌ | ❌ | ✅ View | ❌ |
-| **Project Development** | ✅ Create/Edit/Transition | ✅ Create/Edit/Transition | ✅ Edit (Testing) | ✅ View | ✅ View | ❌ | ✅ All | ❌ | ❌ | ❌ | ✅ View | ❌ |
-| **Project Deployment** | ✅ Create/Edit/Transition | ✅ View | ❌ | ✅ View | ✅ Create/Edit/Transition | ❌ | ✅ All | ❌ | ❌ | ❌ | ✅ View | ❌ |
-| **Project Operations** | ✅ View | ❌ | ❌ | ✅ Create/Edit/Transition | ✅ Create/Edit/Transition | ❌ | ✅ All | ❌ | ❌ | ❌ | ✅ View | ❌ |
+
+**Ghi chú về Epic/Story/Task với Custom Fields**:
+- **Epic/Story với Work Type=Product, Phase=Research**: Thay thế Product Research
+- **Story với Work Type=Product, Phase=Development**: Thay thế Product Development
+- **Epic/Story/Task với Work Type=Product, Phase=Deployment**: Thay thế Product Deployment
+- **Task với Work Type=Product, Phase=Operations**: Thay thế Product Operations
+- **Epic/Story với Work Type=Project, Phase=Research**: Thay thế Project Research
+- **Story với Work Type=Project, Phase=Development**: Thay thế Project Development
+- **Epic/Story/Task với Work Type=Project, Phase=Deployment**: Thay thế Project Deployment
+- **Task/Service Request với Work Type=Project, Phase=Operations**: Thay thế Project Operations
 
 ---
 
 ## CHI TIẾT QUYỀN HẠN
 
 ### Product Owner:
-- ✅ Tạo/Edit/Transition: Epic, Story, Task, Bug, Change Request, Product Research, Product Development, Product Deployment, Project Research, Project Development, Project Deployment, Risk, Portfolio Item, Budget, Demand Forecast, Requirement
+- ✅ Tạo/Edit/Transition: Epic, Story, Task, Bug, Change Request, Risk, Portfolio Item, Budget, Demand Forecast, Requirement
 - ✅ Approve: Change Request, Capacity Request, Asset Request
 - ✅ View: Tất cả issue types
+- **Lưu ý**: Product/Project Research/Development/Deployment/Operations được quản lý qua Epic/Story/Task với custom fields
 
 ### Developer:
-- ✅ Tạo/Edit/Transition: Story, Task, Bug, Product Development, Project Development (trong Dev workflow)
-- ✅ View: Epic, Incident, Change Request, Product Research, Product Deployment, Project Research, Project Deployment, Release, Deployment, Risk, Policy, Requirement, Test Case, Configuration Item
+- ✅ Tạo/Edit/Transition: Story, Task, Bug (trong Dev workflow)
+- ✅ View: Epic, Incident, Change Request, Release, Deployment, Risk, Policy, Requirement, Test Case, Configuration Item
+- **Lưu ý**: Product/Project Development được quản lý qua Story với Work Type và Phase fields
 
 ### QA/Tester:
 - ✅ Tạo/Edit/Transition: Bug, Test Case (trong Testing workflow)
-- ✅ Edit: Story, Task, Product Development, Project Development (Testing results only)
-- ✅ View: Story, Task, Product Development, Project Deployment, Release, Deployment, Requirement, Knowledge Article, Policy
+- ✅ Edit: Story, Task (Testing results only)
+- ✅ View: Story, Task, Release, Deployment, Requirement, Knowledge Article, Policy
+- **Lưu ý**: Product/Project Development testing được quản lý qua Story/Task với Phase=Testing
 
 ### Support:
-- ✅ Tạo/Edit/Transition: Service Request, Incident (SEV2-SEV3), Project Operations, Customer Feedback
-- ✅ View: Service Order, Product Research, Project Research, Project Development, Project Deployment, Customer, Knowledge Article, Policy
+- ✅ Tạo/Edit/Transition: Service Request, Incident (SEV2-SEV3), Customer Feedback
+- ✅ View: Service Order, Customer, Knowledge Article, Policy
+- **Lưu ý**: Project Operations được quản lý qua Task/Service Request với Work Type=Project, Phase=Operations
 
 ### SRE/DevOps:
-- ✅ Tạo/Edit/Transition: Incident (SEV1-SEV2), Change Request (Ops scope), Product Deployment, Project Deployment, Project Operations, Availability Incident, Capacity Request, Disaster Recovery Test, Release, Deployment
+- ✅ Tạo/Edit/Transition: Incident (SEV1-SEV2), Change Request (Ops scope), Availability Incident, Capacity Request, Disaster Recovery Test, Release, Deployment
 - ✅ Approve: Change Request (deployment)
-- ✅ View: Story, Task, Bug, Problem, Security Incident, Risk, Configuration Item, Product Development, Project Research, Project Development
+- ✅ View: Story, Task, Bug, Problem, Security Incident, Risk, Configuration Item
+- **Lưu ý**: Product/Project Deployment/Operations được quản lý qua Epic/Story/Task với Work Type và Phase fields
 
 ### CAB:
 - ✅ Approve/Reject: Change Request
@@ -156,7 +169,7 @@
 ## EFFORT TRACKING PERMISSIONS
 
 ### Quyền Log Effort:
-- ✅ **Tất cả roles** có thể log effort vào các effort fields (Research, Development, Deployment, Operations) cho issues được assign cho họ
+- ✅ **Tất cả roles** có thể log effort vào các effort fields (Research, Development, Testing, Deployment, Operations, Review, Documentation, Coordination) cho issues được assign cho họ
 - ✅ **Product Owner** có thể log effort cho tất cả issues
 - ✅ **Jira Admin** có thể log effort cho tất cả issues
 

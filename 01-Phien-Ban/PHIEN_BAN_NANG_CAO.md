@@ -8,13 +8,13 @@
 - ✅ Advanced analytics & reporting
 - ✅ Phù hợp doanh nghiệp lớn
 - ✅ Scalable và maintainable
-- ✅ Track effort đầy đủ (Nghiên cứu, Phát triển, Triển khai, Vận hành)
+- ✅ Track effort đầy đủ (8 fields: Research, Development, Testing, Deployment, Operations, Review, Documentation, Coordination)
 
 ---
 
 ## 📋 PHẠM VI TRIỂN KHAI
 
-### 1. ISSUE TYPES (39 types - sau khi tối ưu)
+### 1. ISSUE TYPES (39 types)
 
 #### Agile (4 types):
 1. Epic
@@ -338,23 +338,11 @@ Xem chi tiết trong **BO_SUNG_ITIL_VA_QUAN_TRI.md** và **WORKFLOW_DIAGRAMS.md*
 
 ---
 
-## ⏱️ TIMELINE
-
-- **Tuần 1-2**: Nghiên cứu & Thiết kế
-- **Tuần 3-8**: Phát triển & Cấu hình
-- **Tuần 9-10**: Testing & QA
-- **Tuần 11-12**: Training & Documentation
-- **Go-live**: Tuần 13
-
-**TỔNG THỜI GIAN**: 12-13 tuần
-
----
-
 ## ✅ CHECKLIST TRIỂN KHAI
 
 ### Phase 1: Setup Cơ Bản
 - [ ] Tạo Project
-- [ ] Tạo 47 Issue Types
+- [ ] Tạo 39 Issue Types
 - [ ] Tạo Effort Fields (Research, Development, Testing, Deployment, Operations, Review, Documentation, Coordination)
 - [ ] Tạo Calculated Fields (Total Effort, Effort %, Variance, Efficiency)
 - [ ] Tạo Estimated Effort Fields

@@ -38,23 +38,21 @@ jira/
 
 ### 🚀 **CÁCH NHANH NHẤT: Sử dụng File HTML**
 
-**Double-click** vào file `DOCUMENTATION_STANDALONE.html` để xem toàn bộ tài liệu với navigation dễ dàng!
-
-📖 **Hướng dẫn chi tiết**: Xem [README_START_HERE.md](./README_START_HERE.md) hoặc [HUONG_DAN_SU_DUNG_HTML.md](./HUONG_DAN_SU_DUNG_HTML.md)
+**Double-click** vào file `index.html` để xem toàn bộ tài liệu với navigation dễ dàng!
 
 ---
 
 ### 1. [01-Phien-Ban/PHIEN_BAN_CO_BAN.md](./01-Phien-Ban/PHIEN_BAN_CO_BAN.md) - Phiên bản Cơ Bản
-   - 8 Issue Types (tối ưu từ 12)
+   - 8 Issue Types
    - 5 Dashboards
-   - Triển khai 3 tuần
    - Dễ sử dụng, vận hành nhanh
+   - 8 Effort Fields đầy đủ
 
 ### 2. [01-Phien-Ban/PHIEN_BAN_NANG_CAO.md](./01-Phien-Ban/PHIEN_BAN_NANG_CAO.md) - Phiên bản Nâng Cao
-   - 39 Issue Types (tối ưu từ 47)
+   - 39 Issue Types
    - 15+ Dashboards
-   - Triển khai 12-13 tuần
    - Đầy đủ tính năng ITIL, Quản trị, Governance
+   - 8 Effort Fields + Advanced fields
 
 ### 3. [01-Phien-Ban/PHAN_TICH_ISSUE_TYPES.md](./01-Phien-Ban/PHAN_TICH_ISSUE_TYPES.md) ⭐ **QUAN TRỌNG**
    - Phân tích 4 issue types: Product Research, Product Development, Project Deployment, Project Operations
@@ -71,8 +69,8 @@ jira/
 **Mục đích**: Định nghĩa các phiên bản và phân tích issue types
 
 **Files**:
-1. **PHIEN_BAN_CO_BAN.md** - Phiên bản Cơ Bản (8 issue types, 3 tuần triển khai)
-2. **PHIEN_BAN_NANG_CAO.md** - Phiên bản Nâng Cao (39 issue types, 12-13 tuần triển khai)
+1. **PHIEN_BAN_CO_BAN.md** - Phiên bản Cơ Bản (8 issue types)
+2. **PHIEN_BAN_NANG_CAO.md** - Phiên bản Nâng Cao (39 issue types)
 3. **PHAN_TICH_ISSUE_TYPES.md** - Phân tích và quyết định loại bỏ issue types
 
 ---
@@ -149,7 +147,7 @@ jira/
    - 7 roles cơ bản
    - Quyền hạn cho từng role
 
-**Lưu ý**: Tất cả tài liệu đã được tích hợp vào file `DOCUMENTATION_STANDALONE.html` để dễ dàng xem và điều hướng.
+**Lưu ý**: Tất cả tài liệu đã được tích hợp vào file `index.html` để dễ dàng xem và điều hướng.
 
 ---
 
@@ -270,12 +268,11 @@ jira/
 
 | Tiêu chí | Cơ Bản | Nâng Cao |
 |----------|--------|----------|
-| **Issue Types** | 8 (tối ưu) | 39 (tối ưu) |
+| **Issue Types** | 8 | 39 |
 | **Workflows** | 9 | 47 |
 | **Dashboards** | 5 | 15+ |
 | **Roles** | 7 | 12+ |
 | **Integrations** | 2 | 6+ |
-| **Thời gian triển khai** | 3 tuần | 12-13 tuần |
 | **Phù hợp** | Startup, SMB | Enterprise, Large org |
 
 ---
@@ -284,13 +281,11 @@ jira/
 
 ### Chọn Phiên Bản Cơ Bản nếu:
 - ✅ Team < 50 users
-- ✅ Cần triển khai nhanh (3 tuần)
 - ✅ Yêu cầu đơn giản (Agile + ITIL cơ bản)
 - ✅ Startup, SMB
 
 ### Chọn Phiên Bản Nâng Cao nếu:
 - ✅ Team > 100 users
-- ✅ Có thể triển khai trong 3 tháng
 - ✅ Yêu cầu đầy đủ (ITIL + Quản trị + Governance)
 - ✅ Enterprise organization
 

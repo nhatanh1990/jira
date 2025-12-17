@@ -2,12 +2,12 @@
 
 ## 🎯 MỤC TIÊU
 
-- ✅ Triển khai nhanh (2-3 tuần)
+- ✅ Triển khai nhanh
 - ✅ Dễ sử dụng, training tối thiểu
 - ✅ Tích hợp tốt với GitLab
 - ✅ Vận hành đơn giản
 - ✅ Đáp ứng chất lượng cao
-- ✅ Track effort đầy đủ (Nghiên cứu, Phát triển, Triển khai, Vận hành)
+- ✅ Track effort đầy đủ (8 fields: Research, Development, Testing, Deployment, Operations, Review, Documentation, Coordination)
 
 ---
 
@@ -216,16 +216,6 @@ Order Received → Processing → In Production → Delivered → Closed
    - Effort per customer
    - Deployment effort
    - Operations effort
-
----
-
-## ⏱️ TIMELINE
-
-- **Tuần 1**: Setup project, issue types, custom fields, workflows
-- **Tuần 2**: Cấu hình permissions, screens, dashboards
-- **Tuần 3**: Testing, training, go-live
-
-**TỔNG THỜI GIAN**: 3 tuần
 
 ---
 

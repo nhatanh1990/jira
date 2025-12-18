@@ -4,7 +4,7 @@ Tài liệu này giải đáp các câu hỏi thường gặp và hướng dẫn
 
 ---
 
-## 📋 MỤC LỤC
+## MỤC LỤC
 
 1. [FAQ - Câu hỏi thường gặp](#1-faq---câu-hỏi-thường-gặp)
 2. [Troubleshooting - Xử lý sự cố](#2-troubleshooting---xử-lý-sự-cố)
@@ -21,9 +21,9 @@ Tài liệu này giải đáp các câu hỏi thường gặp và hướng dẫn
 
 **Q: Tôi nên chọn phiên bản nào?**
 - **A**: 
-  - **Cơ Bản**: Team < 50 users, cần triển khai nhanh (3 tuần), yêu cầu đơn giản
-  - **Nâng Cao**: Team > 100 users, có thể triển khai 3 tháng, yêu cầu đầy đủ ITIL + Quản trị
-  - Xem [01-Phien-Ban/PHIEN_BAN_CO_BAN.md](../01-Phien-Ban/PHIEN_BAN_CO_BAN.md) và [01-Phien-Ban/PHIEN_BAN_NANG_CAO.md](../01-Phien-Ban/PHIEN_BAN_NANG_CAO.md)
+ - **Cơ Bản**: Team < 50 users, cần triển khai nhanh (3 tuần), yêu cầu đơn giản
+ - **Nâng Cao**: Team > 100 users, có thể triển khai 3 tháng, yêu cầu đầy đủ ITIL + Quản trị
+ - Xem [01-Phien-Ban/PHIEN_BAN_CO_BAN.md](../01-Phien-Ban/PHIEN_BAN_CO_BAN.md) và [01-Phien-Ban/PHIEN_BAN_NANG_CAO.md](../01-Phien-Ban/PHIEN_BAN_NANG_CAO.md)
 
 **Q: Tại sao loại bỏ Product Research, Product Development, Project Deployment, Project Operations?**
 - **A**: Các issue types này trùng lặp với Epic/Story/Task. Thay vào đó, sử dụng Epic/Story/Task với custom fields (Work Type, Phase, Customer). Xem [01-Phien-Ban/PHAN_TICH_ISSUE_TYPES.md](../01-Phien-Ban/PHAN_TICH_ISSUE_TYPES.md)
@@ -53,10 +53,10 @@ Tài liệu này giải đáp các câu hỏi thường gặp và hướng dẫn
 
 **Q: Tôi không thể chuyển status?**
 - **A**: 
-  - Kiểm tra permissions: Bạn có quyền transition không?
-  - Kiểm tra workflow: Status hiện tại có thể transition sang status đó không?
-  - Kiểm tra conditions: Có điều kiện nào block không?
-  - Liên hệ Jira Admin
+ - Kiểm tra permissions: Bạn có quyền transition không?
+ - Kiểm tra workflow: Status hiện tại có thể transition sang status đó không?
+ - Kiểm tra conditions: Có điều kiện nào block không?
+ - Liên hệ Jira Admin
 
 **Q: Làm sao để skip một status trong workflow?**
 - **A**: Không nên skip. Workflow được thiết kế để đảm bảo process đúng. Nếu cần, liên hệ Jira Admin để điều chỉnh workflow.
@@ -70,17 +70,17 @@ Tài liệu này giải đáp các câu hỏi thường gặp và hướng dẫn
 
 **Q: Tôi không thấy issue được assign cho tôi?**
 - **A**: 
-  - Kiểm tra filter: Có thể đang filter theo project khác
-  - Kiểm tra Dashboard: Vào "My Open Issues"
-  - Kiểm tra permissions: Bạn có quyền view project không?
-  - Liên hệ Jira Admin
+ - Kiểm tra filter: Có thể đang filter theo project khác
+ - Kiểm tra Dashboard: Vào "My Open Issues"
+ - Kiểm tra permissions: Bạn có quyền view project không?
+ - Liên hệ Jira Admin
 
 **Q: Tôi không thể edit issue?**
 - **A**: 
-  - Kiểm tra permissions: Bạn có quyền edit không?
-  - Kiểm tra issue status: Một số status có thể restrict edit
-  - Kiểm tra assignee: Bạn có phải assignee không?
-  - Liên hệ Jira Admin
+ - Kiểm tra permissions: Bạn có quyền edit không?
+ - Kiểm tra issue status: Một số status có thể restrict edit
+ - Kiểm tra assignee: Bạn có phải assignee không?
+ - Liên hệ Jira Admin
 
 ---
 
@@ -88,16 +88,16 @@ Tài liệu này giải đáp các câu hỏi thường gặp và hướng dẫn
 
 **Q: GitLab integration không hoạt động?**
 - **A**: 
-  - Kiểm tra GitLab plugin đã được cài đặt chưa
-  - Kiểm tra GitLab URL và token
-  - Kiểm tra permissions
-  - Xem logs trong Jira Admin
+ - Kiểm tra GitLab plugin đã được cài đặt chưa
+ - Kiểm tra GitLab URL và token
+ - Kiểm tra permissions
+ - Xem logs trong Jira Admin
 
 **Q: Làm sao để link MR với Jira issue?**
 - **A**: 
-  - Mention issue key trong MR description (ví dụ: PROJ-123)
-  - Hoặc comment trên issue với link MR
-  - Nếu có integration, MR sẽ tự động link
+ - Mention issue key trong MR description (ví dụ: PROJ-123)
+ - Hoặc comment trên issue với link MR
+ - Nếu có integration, MR sẽ tự động link
 
 ---
 
@@ -107,22 +107,22 @@ Tài liệu này giải đáp các câu hỏi thường gặp và hướng dẫn
 
 **Problem**: Không thể tạo issue
 - **Check**: 
-  - Permissions (Create Issues)
-  - Project active
-  - Required fields
+ - Permissions (Create Issues)
+ - Project active
+ - Required fields
 - **Solution**: 
-  - Kiểm tra permissions
-  - Liên hệ Jira Admin
+ - Kiểm tra permissions
+ - Liên hệ Jira Admin
 
 **Problem**: Issue không hiển thị sau khi tạo
 - **Check**: 
-  - Filter settings
-  - Project permissions
-  - Issue visibility
+ - Filter settings
+ - Project permissions
+ - Issue visibility
 - **Solution**: 
-  - Clear filters
-  - Kiểm tra permissions
-  - Refresh page
+ - Clear filters
+ - Kiểm tra permissions
+ - Refresh page
 
 ---
 
@@ -130,22 +130,22 @@ Tài liệu này giải đáp các câu hỏi thường gặp và hướng dẫn
 
 **Problem**: Không thể transition
 - **Check**: 
-  - Permissions
-  - Workflow conditions
-  - Required fields
-  - Validators
+ - Permissions
+ - Workflow conditions
+ - Required fields
+ - Validators
 - **Solution**: 
-  - Kiểm tra error message
-  - Điền đầy đủ required fields
-  - Liên hệ Jira Admin
+ - Kiểm tra error message
+ - Điền đầy đủ required fields
+ - Liên hệ Jira Admin
 
 **Problem**: Status không đúng
 - **Check**: 
-  - Workflow configuration
-  - Automation rules
+ - Workflow configuration
+ - Automation rules
 - **Solution**: 
-  - Kiểm tra workflow
-  - Liên hệ Jira Admin
+ - Kiểm tra workflow
+ - Liên hệ Jira Admin
 
 ---
 
@@ -153,20 +153,20 @@ Tài liệu này giải đáp các câu hỏi thường gặp và hướng dẫn
 
 **Problem**: Total Effort không tự động tính
 - **Check**: 
-  - Automation rules
-  - Calculated field configuration
+ - Automation rules
+ - Calculated field configuration
 - **Solution**: 
-  - Kiểm tra automation rules
-  - Liên hệ Jira Admin
+ - Kiểm tra automation rules
+ - Liên hệ Jira Admin
 
 **Problem**: Epic effort không cập nhật
 - **Check**: 
-  - Children issues có effort không
-  - Automation rules
+ - Children issues có effort không
+ - Automation rules
 - **Solution**: 
-  - Log effort cho children issues
-  - Kiểm tra automation rules
-  - Liên hệ Jira Admin
+ - Log effort cho children issues
+ - Kiểm tra automation rules
+ - Liên hệ Jira Admin
 
 ---
 
@@ -174,25 +174,25 @@ Tài liệu này giải đáp các câu hỏi thường gặp và hướng dẫn
 
 **Problem**: Jira chạy chậm
 - **Check**: 
-  - Số lượng issues
-  - JQL queries phức tạp
-  - Dashboards có quá nhiều gadgets
-  - Server resources
+ - Số lượng issues
+ - JQL queries phức tạp
+ - Dashboards có quá nhiều gadgets
+ - Server resources
 - **Solution**: 
-  - Optimize JQL queries
-  - Giảm số gadgets trong dashboard
-  - Archive old issues
-  - Liên hệ Jira Admin để kiểm tra server
+ - Optimize JQL queries
+ - Giảm số gadgets trong dashboard
+ - Archive old issues
+ - Liên hệ Jira Admin để kiểm tra server
 
 **Problem**: Dashboard load chậm
 - **Check**: 
-  - Số lượng gadgets
-  - JQL queries phức tạp
-  - Data volume
+ - Số lượng gadgets
+ - JQL queries phức tạp
+ - Data volume
 - **Solution**: 
-  - Giảm số gadgets
-  - Optimize JQL queries
-  - Sử dụng filters thay vì queries phức tạp
+ - Giảm số gadgets
+ - Optimize JQL queries
+ - Sử dụng filters thay vì queries phức tạp
 
 ---
 
@@ -200,15 +200,15 @@ Tài liệu này giải đáp các câu hỏi thường gặp và hướng dẫn
 
 **Problem**: GitLab integration không hoạt động
 - **Check**: 
-  - Plugin installed
-  - GitLab URL và token
-  - Network connectivity
-  - Permissions
+ - Plugin installed
+ - GitLab URL và token
+ - Network connectivity
+ - Permissions
 - **Solution**: 
-  - Reinstall plugin
-  - Update GitLab URL và token
-  - Kiểm tra network
-  - Liên hệ Jira Admin
+ - Reinstall plugin
+ - Update GitLab URL và token
+ - Kiểm tra network
+ - Liên hệ Jira Admin
 
 ---
 
@@ -217,66 +217,66 @@ Tài liệu này giải đáp các câu hỏi thường gặp và hướng dẫn
 ### 3.1. Issue Creation
 
 **DO**:
-- ✅ Viết Summary rõ ràng, mô tả ngắn gọn
-- ✅ Điền đầy đủ Description
-- ✅ Viết Acceptance Criteria cho Story
-- ✅ Gán đúng assignee
-- ✅ Set priority phù hợp
-- ✅ Sử dụng Labels và Components
+- Viết Summary rõ ràng, mô tả ngắn gọn
+- Điền đầy đủ Description
+- Viết Acceptance Criteria cho Story
+- Gán đúng assignee
+- Set priority phù hợp
+- Sử dụng Labels và Components
 
 **DON'T**:
-- ❌ Tạo issue với Summary mơ hồ
-- ❌ Bỏ trống Description
-- ❌ Gán issue cho người không liên quan
-- ❌ Set priority không đúng
+- Tạo issue với Summary mơ hồ
+- Bỏ trống Description
+- Gán issue cho người không liên quan
+- Set priority không đúng
 
 ---
 
 ### 3.2. Effort Tracking
 
 **DO**:
-- ✅ Log effort hàng ngày
-- ✅ Log chính xác, không làm tròn quá nhiều
-- ✅ Phân chia effort theo phase đúng
-- ✅ Log cả coordination effort (meetings, standups)
+- Log effort hàng ngày
+- Log chính xác, không làm tròn quá nhiều
+- Phân chia effort theo phase đúng
+- Log cả coordination effort (meetings, standups)
 
 **DON'T**:
-- ❌ Để cuối tuần mới log
-- ❌ Làm tròn quá nhiều
-- ❌ Bỏ qua coordination effort
-- ❌ Log effort không chính xác
+- Để cuối tuần mới log
+- Làm tròn quá nhiều
+- Bỏ qua coordination effort
+- Log effort không chính xác
 
 ---
 
 ### 3.3. Workflow
 
 **DO**:
-- ✅ Follow workflow đúng thứ tự
-- ✅ Update status thường xuyên
-- ✅ Comment khi có thay đổi quan trọng
-- ✅ Assign đúng người
+- Follow workflow đúng thứ tự
+- Update status thường xuyên
+- Comment khi có thay đổi quan trọng
+- Assign đúng người
 
 **DON'T**:
-- ❌ Skip steps trong workflow
-- ❌ Để issue ở một status quá lâu
-- ❌ Không comment khi có thay đổi
-- ❌ Assign cho người không liên quan
+- Skip steps trong workflow
+- Để issue ở một status quá lâu
+- Không comment khi có thay đổi
+- Assign cho người không liên quan
 
 ---
 
 ### 3.4. Communication
 
 **DO**:
-- ✅ Sử dụng @mention để tag người khác
-- ✅ Comment khi cần hỏi/trả lời
-- ✅ Update status khi có thay đổi
-- ✅ Attach files khi cần
+- Sử dụng @mention để tag người khác
+- Comment khi cần hỏi/trả lời
+- Update status khi có thay đổi
+- Attach files khi cần
 
 **DON'T**:
-- ❌ Comment không cần thiết
-- ❌ Không tag người liên quan
-- ❌ Không update status
-- ❌ Attach files quá lớn
+- Comment không cần thiết
+- Không tag người liên quan
+- Không update status
+- Attach files quá lớn
 
 ---
 
@@ -389,7 +389,7 @@ project = PROJ AND text ~ "test" AND updatedDate >= -30d
 
 ---
 
-## 📞 SUPPORT
+## SUPPORT
 
 Nếu bạn gặp vấn đề không được giải quyết trong tài liệu này:
 

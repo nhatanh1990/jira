@@ -4,7 +4,7 @@ Chào mừng bạn đến với hệ thống Jira! Tài liệu này sẽ hướn
 
 ---
 
-## 📋 MỤC LỤC
+## MỤC LỤC
 
 1. [Bắt đầu](#1-bắt-đầu)
 2. [Hiểu về Jira](#2-hiểu-về-jira)
@@ -39,13 +39,13 @@ Chào mừng bạn đến với hệ thống Jira! Tài liệu này sẽ hướn
 
 1. Click vào avatar (góc trên bên phải) → **Profile**
 2. Cập nhật thông tin:
-   - Avatar
-   - Email
-   - Timezone
-   - Language
+ - Avatar
+ - Email
+ - Timezone
+ - Language
 3. Cấu hình notifications:
-   - Email notifications
-   - In-app notifications
+ - Email notifications
+ - In-app notifications
 
 ---
 
@@ -117,36 +117,36 @@ Chào mừng bạn đến với hệ thống Jira! Tài liệu này sẽ hướn
 #### Công việc hàng ngày:
 
 1. **Xem issues được assign**:
-   - Vào Dashboard → **My Open Issues**
-   - Hoặc: Issues → **Assigned to Me**
+ - Vào Dashboard → **My Open Issues**
+ - Hoặc: Issues → **Assigned to Me**
 
 2. **Bắt đầu làm việc**:
-   - Mở issue (Story/Task/Bug)
-   - Đọc Description và Acceptance Criteria
-   - Transition: **To Do → In Progress**
+ - Mở issue (Story/Task/Bug)
+ - Đọc Description và Acceptance Criteria
+ - Transition: **To Do → In Progress**
 
 3. **Log effort**:
-   - Khi làm việc, log effort vào issue
-   - Click **Log Work** → Điền effort theo phase
-   - Ví dụ: Development Effort = 4 hours
+ - Khi làm việc, log effort vào issue
+ - Click **Log Work** → Điền effort theo phase
+ - Ví dụ: Development Effort = 4 hours
 
 4. **Tạo GitLab branch** (nếu có integration):
-   - Click **Create Branch** trên issue
-   - Branch sẽ tự động link với issue
+ - Click **Create Branch** trên issue
+ - Branch sẽ tự động link với issue
 
 5. **Tạo Merge Request**:
-   - Sau khi code xong, tạo MR trên GitLab
-   - Link MR vào Jira issue (comment hoặc link field)
+ - Sau khi code xong, tạo MR trên GitLab
+ - Link MR vào Jira issue (comment hoặc link field)
 
 6. **Chuyển status**:
-   - Sau khi tạo MR → Transition: **In Progress → Code Review**
-   - Sau khi code được review → Transition: **Code Review → Testing**
+ - Sau khi tạo MR → Transition: **In Progress → Code Review**
+ - Sau khi code được review → Transition: **Code Review → Testing**
 
 #### Best Practices:
-- ✅ Luôn log effort khi làm việc
-- ✅ Update status thường xuyên
-- ✅ Comment khi có thay đổi quan trọng
-- ✅ Link MR với issue
+- Luôn log effort khi làm việc
+- Update status thường xuyên
+- Comment khi có thay đổi quan trọng
+- Link MR với issue
 
 ---
 
@@ -155,37 +155,37 @@ Chào mừng bạn đến với hệ thống Jira! Tài liệu này sẽ hướn
 #### Công việc hàng ngày:
 
 1. **Xem issues cần test**:
-   - Vào Dashboard → **Issues in Testing**
-   - Hoặc filter: `status = "Testing"`
+ - Vào Dashboard → **Issues in Testing**
+ - Hoặc filter: `status = "Testing"`
 
 2. **Test issue**:
-   - Mở Story/Bug
-   - Đọc Acceptance Criteria
-   - Test theo criteria
-   - Ghi lại kết quả test
+ - Mở Story/Bug
+ - Đọc Acceptance Criteria
+ - Test theo criteria
+ - Ghi lại kết quả test
 
 3. **Tạo Bug nếu có lỗi**:
-   - Click **Create Issue** → **Bug**
-   - Điền thông tin:
-     - Summary: Mô tả ngắn gọn
-     - Description: Chi tiết
-     - Steps to Reproduce: Các bước để reproduce
-     - Priority: High/Medium/Low
-   - Link Bug với Story gốc
+ - Click **Create Issue** → **Bug**
+ - Điền thông tin:
+ - Summary: Mô tả ngắn gọn
+ - Description: Chi tiết
+ - Steps to Reproduce: Các bước để reproduce
+ - Priority: High/Medium/Low
+ - Link Bug với Story gốc
 
 4. **Log testing effort**:
-   - Vào Story → **Log Work**
-   - **Testing Effort**: Số giờ test
+ - Vào Story → **Log Work**
+ - **Testing Effort**: Số giờ test
 
 5. **Chuyển status**:
-   - Nếu pass → Transition: **Testing → Ready for Release**
-   - Nếu fail → Transition: **Testing → In Progress** (để Developer fix)
+ - Nếu pass → Transition: **Testing → Ready for Release**
+ - Nếu fail → Transition: **Testing → In Progress** (để Developer fix)
 
 #### Best Practices:
-- ✅ Test kỹ theo Acceptance Criteria
-- ✅ Ghi lại kết quả test rõ ràng
-- ✅ Tạo Bug với đầy đủ thông tin
-- ✅ Log testing effort
+- Test kỹ theo Acceptance Criteria
+- Ghi lại kết quả test rõ ràng
+- Tạo Bug với đầy đủ thông tin
+- Log testing effort
 
 ---
 
@@ -194,33 +194,33 @@ Chào mừng bạn đến với hệ thống Jira! Tài liệu này sẽ hướn
 #### Công việc hàng ngày:
 
 1. **Tạo Epic và Story**:
-   - Vào Project → **Create Issue**
-   - Chọn **Epic** hoặc **Story**
-   - Điền thông tin đầy đủ:
-     - Summary, Description
-     - Acceptance Criteria (cho Story)
-     - Story Points (cho Story)
-     - Work Type, Phase
+ - Vào Project → **Create Issue**
+ - Chọn **Epic** hoặc **Story**
+ - Điền thông tin đầy đủ:
+ - Summary, Description
+ - Acceptance Criteria (cho Story)
+ - Story Points (cho Story)
+ - Work Type, Phase
 
 2. **Quản lý Backlog**:
-   - Vào Project → **Backlog**
-   - Sắp xếp priority
-   - Gán Story cho Developer
+ - Vào Project → **Backlog**
+ - Sắp xếp priority
+ - Gán Story cho Developer
 
 3. **Review và Approve**:
-   - Review Story ở status "Ready for Release"
-   - Approve hoặc request changes
-   - Transition: **Ready for Release → Done**
+ - Review Story ở status "Ready for Release"
+ - Approve hoặc request changes
+ - Transition: **Ready for Release → Done**
 
 4. **Xem Dashboards**:
-   - Vào Dashboard → **Product Owner Dashboard**
-   - Xem progress, effort, velocity
+ - Vào Dashboard → **Product Owner Dashboard**
+ - Xem progress, effort, velocity
 
 #### Best Practices:
-- ✅ Viết Acceptance Criteria rõ ràng
-- ✅ Gán Story Points hợp lý
-- ✅ Review thường xuyên
-- ✅ Track effort của Epic
+- Viết Acceptance Criteria rõ ràng
+- Gán Story Points hợp lý
+- Review thường xuyên
+- Track effort của Epic
 
 ---
 
@@ -229,37 +229,37 @@ Chào mừng bạn đến với hệ thống Jira! Tài liệu này sẽ hướn
 #### Công việc hàng ngày:
 
 1. **Tạo Service Request**:
-   - Vào Project → **Create Issue** → **Service Request**
-   - Điền thông tin:
-     - Summary: Yêu cầu của khách hàng
-     - Description: Chi tiết
-     - Requestor: Khách hàng
-     - Priority
+ - Vào Project → **Create Issue** → **Service Request**
+ - Điền thông tin:
+ - Summary: Yêu cầu của khách hàng
+ - Description: Chi tiết
+ - Requestor: Khách hàng
+ - Priority
 
 2. **Xử lý Service Request**:
-   - Transition: **New → In Progress**
-   - Thực hiện yêu cầu
-   - Log effort: **Operations Effort**
+ - Transition: **New → In Progress**
+ - Thực hiện yêu cầu
+ - Log effort: **Operations Effort**
 
 3. **Tạo Incident** (nếu có sự cố):
-   - Vào Project → **Create Issue** → **Incident**
-   - Điền thông tin:
-     - Summary: Mô tả sự cố
-     - Severity: SEV1/SEV2/SEV3/SEV4
-     - Priority
-     - Affected Users
+ - Vào Project → **Create Issue** → **Incident**
+ - Điền thông tin:
+ - Summary: Mô tả sự cố
+ - Severity: SEV1/SEV2/SEV3/SEV4
+ - Priority
+ - Affected Users
 
 4. **Xử lý Incident**:
-   - Transition: **New → Acknowledged → Investigating**
-   - Tìm nguyên nhân
-   - Giải quyết
-   - Transition: **Investigating → Resolved → Closed**
+ - Transition: **New → Acknowledged → Investigating**
+ - Tìm nguyên nhân
+ - Giải quyết
+ - Transition: **Investigating → Resolved → Closed**
 
 #### Best Practices:
-- ✅ Phản hồi nhanh chóng
-- ✅ Log effort đầy đủ
-- ✅ Update status thường xuyên
-- ✅ Comment khi có thay đổi
+- Phản hồi nhanh chóng
+- Log effort đầy đủ
+- Update status thường xuyên
+- Comment khi có thay đổi
 
 ---
 
@@ -268,28 +268,28 @@ Chào mừng bạn đến với hệ thống Jira! Tài liệu này sẽ hướn
 #### Công việc hàng ngày:
 
 1. **Xử lý Incident SEV1/SEV2**:
-   - Nhận Incident từ Support hoặc monitoring
-   - Transition: **New → Investigating**
-   - Tìm root cause
-   - Mitigate/Resolve
-   - Log effort
+ - Nhận Incident từ Support hoặc monitoring
+ - Transition: **New → Investigating**
+ - Tìm root cause
+ - Mitigate/Resolve
+ - Log effort
 
 2. **Xử lý Change Request**:
-   - Review Change Request
-   - Approve (nếu là deployment)
-   - Implement change
-   - Transition: **Approved → Implementation → Completed**
+ - Review Change Request
+ - Approve (nếu là deployment)
+ - Implement change
+ - Transition: **Approved → Implementation → Completed**
 
 3. **Deploy**:
-   - Chạy GitLab pipeline
-   - Monitor deployment
-   - Log deployment effort
+ - Chạy GitLab pipeline
+ - Monitor deployment
+ - Log deployment effort
 
 #### Best Practices:
-- ✅ Ưu tiên Incident SEV1
-- ✅ Log effort đầy đủ
-- ✅ Document root cause
-- ✅ Follow change management process
+- Ưu tiên Incident SEV1
+- Log effort đầy đủ
+- Document root cause
+- Follow change management process
 
 ---
 
@@ -300,11 +300,11 @@ Chào mừng bạn đến với hệ thống Jira! Tài liệu này sẽ hướn
 1. Vào Project → Click **Create** (góc trên bên phải)
 2. Chọn Issue Type
 3. Điền thông tin:
-   - **Summary**: Tiêu đề (bắt buộc)
-   - **Description**: Mô tả chi tiết
-   - **Assignee**: Người được gán (có thể để trống)
-   - **Priority**: Độ ưu tiên
-   - **Custom Fields**: Work Type, Phase, etc.
+ - **Summary**: Tiêu đề (bắt buộc)
+ - **Description**: Mô tả chi tiết
+ - **Assignee**: Người được gán (có thể để trống)
+ - **Priority**: Độ ưu tiên
+ - **Custom Fields**: Work Type, Phase, etc.
 4. Click **Create**
 
 ### 4.2. Tìm Issue
@@ -316,9 +316,9 @@ Chào mừng bạn đến với hệ thống Jira! Tài liệu này sẽ hướn
 **Cách 2: Advanced Search (JQL)**:
 - Click **Issues** → **Search for issues**
 - Sử dụng JQL:
-  ```
-  project = PROJ AND assignee = currentUser() AND status != Done
-  ```
+ ```
+ project = PROJ AND assignee = currentUser() AND status != Done
+ ```
 
 **Cách 3: Filters**:
 - Vào **Issues** → **My Filters**
@@ -330,8 +330,8 @@ Chào mừng bạn đến với hệ thống Jira! Tài liệu này sẽ hướn
 2. Click **Workflow** (góc trên bên phải)
 3. Chọn status mới
 4. Điền thông tin (nếu cần):
-   - Comment
-   - Assignee (nếu cần thay đổi)
+ - Comment
+ - Assignee (nếu cần thay đổi)
 5. Click **Transition**
 
 ### 4.4. Comment
@@ -367,27 +367,27 @@ Chào mừng bạn đến với hệ thống Jira! Tài liệu này sẽ hướn
 
 ### 5.1. Tại sao cần log effort?
 
-- ✅ Track công sức thực tế
-- ✅ Đánh giá performance
-- ✅ Planning chính xác hơn
-- ✅ Báo cáo cho management
+- Track công sức thực tế
+- Đánh giá performance
+- Planning chính xác hơn
+- Báo cáo cho management
 
 ### 5.2. Cách log effort
 
 1. Mở issue
 2. Click **Log Work** (góc trên bên phải)
 3. Điền thông tin:
-   - **Time Spent**: Số giờ (ví dụ: 4h, 2h 30m)
-   - **Date**: Ngày làm việc
-   - **Effort Fields**: Chọn effort type
-     - Research Effort
-     - Development Effort
-     - Testing Effort
-     - Deployment Effort
-     - Operations Effort
-     - Review Effort
-     - Documentation Effort
-     - Coordination Effort
+ - **Time Spent**: Số giờ (ví dụ: 4h, 2h 30m)
+ - **Date**: Ngày làm việc
+ - **Effort Fields**: Chọn effort type
+ - Research Effort
+ - Development Effort
+ - Testing Effort
+ - Deployment Effort
+ - Operations Effort
+ - Review Effort
+ - Documentation Effort
+ - Coordination Effort
 4. Click **Log**
 
 ### 5.3. Ví dụ log effort
@@ -403,10 +403,10 @@ Chào mừng bạn đến với hệ thống Jira! Tài liệu này sẽ hướn
 
 ### 5.4. Best Practices
 
-- ✅ Log effort hàng ngày (không để cuối tuần)
-- ✅ Log chính xác (không làm tròn quá nhiều)
-- ✅ Phân chia effort theo phase
-- ✅ Log cả coordination effort (meetings, standups)
+- Log effort hàng ngày (không để cuối tuần)
+- Log chính xác (không làm tròn quá nhiều)
+- Phân chia effort theo phase
+- Log cả coordination effort (meetings, standups)
 
 ---
 
@@ -415,8 +415,8 @@ Chào mừng bạn đến với hệ thống Jira! Tài liệu này sẽ hướn
 ### 6.1. General Tips
 
 **Viết Summary rõ ràng**:
-- ❌ Bad: "Fix bug"
-- ✅ Good: "Fix login error when user enters special characters"
+- Bad: "Fix bug"
+- Good: "Fix login error when user enters special characters"
 
 **Viết Description đầy đủ**:
 - Mô tả chi tiết
@@ -464,9 +464,9 @@ Chào mừng bạn đến với hệ thống Jira! Tài liệu này sẽ hướn
 - Họ sẽ nhận notification
 
 **Sử dụng emoji** (nếu phù hợp):
-- ✅ Done
-- ⚠️ Warning
-- ❌ Blocked
+- Done
+- Warning
+- Blocked
 - 🔄 In Progress
 
 ---
@@ -498,9 +498,9 @@ Chào mừng bạn đến với hệ thống Jira! Tài liệu này sẽ hướn
 
 **A**:
 - Sử dụng Advanced Search (JQL):
-  ```
-  project = PROJ AND created >= -30d
-  ```
+ ```
+ project = PROJ AND created >= -30d
+ ```
 - Sử dụng filters
 - Vào Project → Issues → Tất cả issues
 
@@ -533,7 +533,7 @@ Chào mừng bạn đến với hệ thống Jira! Tài liệu này sẽ hướn
 
 ---
 
-## 📞 HỖ TRỢ
+## HỖ TRỢ
 
 Nếu bạn có câu hỏi hoặc cần hỗ trợ:
 
@@ -543,7 +543,7 @@ Nếu bạn có câu hỏi hoặc cần hỗ trợ:
 
 ---
 
-## ✅ CHECKLIST CHO THÀNH VIÊN MỚI
+## CHECKLIST CHO THÀNH VIÊN MỚI
 
 - [ ] Đã đăng nhập và làm quen với giao diện
 - [ ] Đã cấu hình profile và notifications
@@ -556,4 +556,4 @@ Nếu bạn có câu hỏi hoặc cần hỗ trợ:
 
 ---
 
-**Chúc bạn sử dụng Jira hiệu quả! 🚀**
+**Chúc bạn sử dụng Jira hiệu quả! **

@@ -1,18 +1,18 @@
 # PHIÊN BẢN NÂNG CAO - QUẢN TRỊ JIRA
 
-## 🎯 MỤC TIÊU
+## MỤC TIÊU
 
-- ✅ Đầy đủ tính năng ITIL
-- ✅ Quản lý kinh doanh toàn diện
-- ✅ Governance & Compliance
-- ✅ Advanced analytics & reporting
-- ✅ Phù hợp doanh nghiệp lớn
-- ✅ Scalable và maintainable
-- ✅ Track effort đầy đủ (8 fields: Research, Development, Testing, Deployment, Operations, Review, Documentation, Coordination)
+- Đầy đủ tính năng ITIL
+- Quản lý kinh doanh toàn diện
+- Governance & Compliance
+- Advanced analytics & reporting
+- Phù hợp doanh nghiệp lớn
+- Scalable và maintainable
+- Track effort đầy đủ (8 fields: Research, Development, Testing, Deployment, Operations, Review, Documentation, Coordination)
 
 ---
 
-## 📋 PHẠM VI TRIỂN KHAI
+## PHẠM VI TRIỂN KHAI
 
 ### 1. ISSUE TYPES (39 types)
 
@@ -142,93 +142,93 @@ Xem chi tiết trong **BO_SUNG_ITIL_VA_QUAN_TRI.md** và **WORKFLOW_DIAGRAMS.md*
 ### 5. DASHBOARDS (15+ dashboards)
 
 1. **Executive Dashboard**
-   - Total Effort by Phase
-   - Effort Trend
-   - Effort by Issue Type
-   - Effort by Customer/Product
-   - Financial Overview
-   - ITIL Service Health
+ - Total Effort by Phase
+ - Effort Trend
+ - Effort by Issue Type
+ - Effort by Customer/Product
+ - Financial Overview
+ - ITIL Service Health
 
 2. **Product Owner Dashboard**
-   - Sprint Progress
-   - Backlog Management
-   - Product Effort Summary
-   - Release Planning
+ - Sprint Progress
+ - Backlog Management
+ - Product Effort Summary
+ - Release Planning
 
 3. **Development Dashboard**
-   - My Work
-   - Sprint Board
-   - Development Effort Tracking
-   - GitLab Integration
+ - My Work
+ - Sprint Board
+ - Development Effort Tracking
+ - GitLab Integration
 
 4. **QA Dashboard**
-   - Testing Queue
-   - Quality Metrics
-   - Test Coverage
+ - Testing Queue
+ - Quality Metrics
+ - Test Coverage
 
 5. **Support Dashboard**
-   - Service Request Queue
-   - Incident Management
-   - Operations Effort
+ - Service Request Queue
+ - Incident Management
+ - Operations Effort
 
 6. **SRE/DevOps Dashboard**
-   - Incident Management
-   - Change Management
-   - Infrastructure Health
-   - Deployment Effort
+ - Incident Management
+ - Change Management
+ - Infrastructure Health
+ - Deployment Effort
 
 7. **Problem Management Dashboard**
-   - Problem Trends
-   - MTTR
-   - Known Errors
+ - Problem Trends
+ - MTTR
+ - Known Errors
 
 8. **Knowledge Management Dashboard**
-   - Article Views
-   - Knowledge Coverage
+ - Article Views
+ - Knowledge Coverage
 
 9. **SLA Management Dashboard**
-   - SLA Compliance
-   - Service Performance
+ - SLA Compliance
+ - Service Performance
 
 10. **Financial Dashboard**
-    - Budget vs Actual
-    - Cost Analysis
-    - ROI
+ - Budget vs Actual
+ - Cost Analysis
+ - ROI
 
 11. **Risk Management Dashboard**
-    - Risk Register
-    - Risk Heat Map
+ - Risk Register
+ - Risk Heat Map
 
 12. **Compliance Dashboard**
-    - Compliance Status
-    - Audit Findings
+ - Compliance Status
+ - Audit Findings
 
 13. **Portfolio Dashboard**
-    - Portfolio Value
-    - Resource Utilization
+ - Portfolio Value
+ - Resource Utilization
 
 14. **Security Dashboard**
-    - Security Incidents
-    - Security Assessments
+ - Security Incidents
+ - Security Assessments
 
 15. **Effort Summary Dashboard**
-    - Total Effort by Phase (Pie Chart)
-    - Effort Trend (Line Chart)
-    - Effort by Issue Type (Bar Chart)
-    - Effort by Customer/Product (Bar Chart)
-    - Effort Efficiency (Gauge Chart)
-    - Effort Variance (Bar Chart)
+ - Total Effort by Phase (Pie Chart)
+ - Effort Trend (Line Chart)
+ - Effort by Issue Type (Bar Chart)
+ - Effort by Customer/Product (Bar Chart)
+ - Effort Efficiency (Gauge Chart)
+ - Effort Variance (Bar Chart)
 
 ---
 
 ### 6. INTEGRATIONS
 
-- ✅ **GitLab** - Full integration (Branch, MR, Pipeline)
-- ✅ **Confluence** - Knowledge base
-- ✅ **Email Notifications** - Advanced
-- ✅ **Slack** - Notifications
-- ✅ **Monitoring Tools** - Prometheus, Grafana
-- ✅ **BI Tools** - Tableau, Power BI (optional)
+- **GitLab** - Full integration (Branch, MR, Pipeline)
+- **Confluence** - Knowledge base
+- **Email Notifications** - Advanced
+- **Slack** - Notifications
+- **Monitoring Tools** - Prometheus, Grafana
+- **BI Tools** - Tableau, Power BI (optional)
 
 ---
 
@@ -250,7 +250,7 @@ Xem chi tiết trong **BO_SUNG_ITIL_VA_QUAN_TRI.md** và **WORKFLOW_DIAGRAMS.md*
 
 ---
 
-## 📊 EFFORT TRACKING NÂNG CAO
+## EFFORT TRACKING NÂNG CAO
 
 ### Issue Types với Effort Fields:
 
@@ -288,57 +288,57 @@ Xem chi tiết trong **BO_SUNG_ITIL_VA_QUAN_TRI.md** và **WORKFLOW_DIAGRAMS.md*
 
 ---
 
-## 📈 REPORTS NÂNG CAO
+## REPORTS NÂNG CAO
 
 1. **Effort Summary Report**
-   - Total effort by phase
-   - Effort by issue type
-   - Effort by customer/product
-   - Effort trends
-   - Effort variance analysis
-   - Effort efficiency metrics
+ - Total effort by phase
+ - Effort by issue type
+ - Effort by customer/product
+ - Effort trends
+ - Effort variance analysis
+ - Effort efficiency metrics
 
 2. **Product Effort Report**
-   - Research effort
-   - Development effort
-   - Deployment effort
-   - Operations effort
-   - Total effort
-   - Effort distribution
-   - Effort trends
+ - Research effort
+ - Development effort
+ - Deployment effort
+ - Operations effort
+ - Total effort
+ - Effort distribution
+ - Effort trends
 
 3. **Project Effort Report**
-   - Effort per customer
-   - Effort by phase per customer
-   - Deployment effort breakdown
-   - Operations effort breakdown
-   - Effort variance
-   - ROI analysis
+ - Effort per customer
+ - Effort by phase per customer
+ - Deployment effort breakdown
+ - Operations effort breakdown
+ - Effort variance
+ - ROI analysis
 
 4. **Customer Effort Report**
-   - Total effort per customer
-   - Effort breakdown by phase
-   - Effort trends per customer
-   - Customer satisfaction vs effort
+ - Total effort per customer
+ - Effort breakdown by phase
+ - Effort trends per customer
+ - Customer satisfaction vs effort
 
 5. **ITIL Effort Report**
-   - Incident effort
-   - Change effort
-   - Problem effort
-   - Service effort
+ - Incident effort
+ - Change effort
+ - Problem effort
+ - Service effort
 
 6. **Financial Effort Report**
-   - Effort vs Budget
-   - Cost per effort hour
-   - ROI by effort
+ - Effort vs Budget
+ - Cost per effort hour
+ - ROI by effort
 
 7. **Risk Effort Report**
-   - Effort for risk mitigation
-   - Risk vs effort analysis
+ - Effort for risk mitigation
+ - Risk vs effort analysis
 
 ---
 
-## ✅ CHECKLIST TRIỂN KHAI
+## CHECKLIST TRIỂN KHAI
 
 ### Phase 1: Setup Cơ Bản
 - [ ] Tạo Project
@@ -390,41 +390,41 @@ Xem chi tiết trong **BO_SUNG_ITIL_VA_QUAN_TRI.md** và **WORKFLOW_DIAGRAMS.md*
 
 ---
 
-## 🎯 BEST PRACTICES
+## BEST PRACTICES
 
 1. **Effort Tracking**:
-   - Log effort vào đúng phase field
-   - Track estimated vs actual effort
-   - Review effort variance
-   - Analyze effort efficiency
-   - Update effort thường xuyên
+ - Log effort vào đúng phase field
+ - Track estimated vs actual effort
+ - Review effort variance
+ - Analyze effort efficiency
+ - Update effort thường xuyên
 
 2. **Agile/Kanban**:
-   - Sử dụng Story Points cho estimation
-   - Track velocity
-   - Review sprint effort
-   - Use WIP limits
-   - Track cycle time
+ - Sử dụng Story Points cho estimation
+ - Track velocity
+ - Review sprint effort
+ - Use WIP limits
+ - Track cycle time
 
 3. **ITIL**:
-   - Follow ITIL processes đầy đủ
-   - Track SLA compliance
-   - Document changes
-   - Manage problems
-   - Maintain knowledge base
+ - Follow ITIL processes đầy đủ
+ - Track SLA compliance
+ - Document changes
+ - Manage problems
+ - Maintain knowledge base
 
 4. **Reporting**:
-   - Review effort reports hàng tuần
-   - Compare actual vs estimated effort
-   - Identify effort trends
-   - Analyze effort efficiency
-   - Optimize based on data
+ - Review effort reports hàng tuần
+ - Compare actual vs estimated effort
+ - Identify effort trends
+ - Analyze effort efficiency
+ - Optimize based on data
 
 5. **Governance**:
-   - Follow policies
-   - Track compliance
-   - Manage risks
-   - Financial management
+ - Follow policies
+ - Track compliance
+ - Manage risks
+ - Financial management
 
 ---
 

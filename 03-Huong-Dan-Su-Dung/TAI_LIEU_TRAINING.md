@@ -4,7 +4,7 @@ Tài liệu training chi tiết cho tất cả roles trong hệ thống Jira.
 
 ---
 
-## 📋 MỤC LỤC
+## MỤC LỤC
 
 1. [Training Overview](#1-training-overview)
 2. [Training cho Developer](#2-training-cho-developer)
@@ -23,11 +23,11 @@ Tài liệu training chi tiết cho tất cả roles trong hệ thống Jira.
 
 ### 1.1. Mục tiêu training
 
-- ✅ Hiểu cách sử dụng Jira hiệu quả
-- ✅ Nắm vững workflows và processes
-- ✅ Biết cách track effort đúng cách
-- ✅ Sử dụng dashboards và reports
-- ✅ Follow best practices
+- Hiểu cách sử dụng Jira hiệu quả
+- Nắm vững workflows và processes
+- Biết cách track effort đúng cách
+- Sử dụng dashboards và reports
+- Follow best practices
 
 ### 1.2. Cấu trúc training
 
@@ -121,12 +121,12 @@ Tài liệu training chi tiết cho tất cả roles trong hệ thống Jira.
 **Nội dung**:
 - Tại sao cần log effort?
 - Các effort fields:
-  - Research Effort
-  - Development Effort
-  - Testing Effort
-  - Review Effort
-  - Documentation Effort
-  - Coordination Effort
+ - Research Effort
+ - Development Effort
+ - Testing Effort
+ - Review Effort
+ - Documentation Effort
+ - Coordination Effort
 - Cách log effort
 - Best practices
 
@@ -223,11 +223,11 @@ Tài liệu training chi tiết cho tất cả roles trong hệ thống Jira.
 **Nội dung**:
 - Khi nào tạo Bug?
 - Cách tạo Bug:
-  - Summary rõ ràng
-  - Description chi tiết
-  - Steps to Reproduce
-  - Expected vs Actual
-  - Priority
+ - Summary rõ ràng
+ - Description chi tiết
+ - Steps to Reproduce
+ - Expected vs Actual
+ - Priority
 - Link Bug với Story
 - Track Bug lifecycle
 
@@ -294,16 +294,16 @@ Tài liệu training chi tiết cho tất cả roles trong hệ thống Jira.
 
 **Nội dung**:
 - Tạo Epic:
-  - Summary, Description
-  - Work Type, Phase
-  - Business Value
-  - Target Release
+ - Summary, Description
+ - Work Type, Phase
+ - Business Value
+ - Target Release
 - Tạo Story:
-  - Summary (User Story format)
-  - Description
-  - Acceptance Criteria
-  - Story Points
-  - Work Type, Phase
+ - Summary (User Story format)
+ - Description
+ - Acceptance Criteria
+ - Story Points
+ - Work Type, Phase
 - Link Story với Epic
 
 **Thực hành**:
@@ -546,10 +546,10 @@ Tài liệu training chi tiết cho tất cả roles trong hệ thống Jira.
 
 **Nội dung**:
 - Review Change Request:
-  - Change Type (Standard, Normal, Emergency)
-  - Risk Level
-  - Implementation Plan
-  - Rollback Plan
+ - Change Type (Standard, Normal, Emergency)
+ - Risk Level
+ - Implementation Plan
+ - Rollback Plan
 - Approve/Reject Change Request
 - Comment required fields
 
@@ -614,9 +614,9 @@ Tài liệu training chi tiết cho tất cả roles trong hệ thống Jira.
 
 **Nội dung**:
 - Tạo custom fields
-  - Text, Number, Date, User Picker, etc.
-  - Time Tracking fields
-  - Calculated fields
+ - Text, Number, Date, User Picker, etc.
+ - Time Tracking fields
+ - Calculated fields
 - Field configuration
 - Screen configuration
 
@@ -789,7 +789,7 @@ Tài liệu training chi tiết cho tất cả roles trong hệ thống Jira.
 
 ---
 
-## 📊 TRAINING SCHEDULE
+## TRAINING SCHEDULE
 
 ### Recommended Training Schedule
 
@@ -809,7 +809,7 @@ Tài liệu training chi tiết cho tất cả roles trong hệ thống Jira.
 
 ---
 
-## ✅ TRAINING CHECKLIST
+## TRAINING CHECKLIST
 
 ### For All Users:
 - [ ] Completed basic training
@@ -833,4 +833,4 @@ Tài liệu training chi tiết cho tất cả roles trong hệ thống Jira.
 
 ---
 
-**Chúc bạn training thành công! 🚀**
+**Chúc bạn training thành công! **

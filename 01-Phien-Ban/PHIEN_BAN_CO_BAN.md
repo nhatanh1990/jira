@@ -1,17 +1,17 @@
 # PHIÊN BẢN CƠ BẢN - QUẢN TRỊ JIRA
 
-## 🎯 MỤC TIÊU
+## MỤC TIÊU
 
-- ✅ Triển khai nhanh
-- ✅ Dễ sử dụng, training tối thiểu
-- ✅ Tích hợp tốt với GitLab
-- ✅ Vận hành đơn giản
-- ✅ Đáp ứng chất lượng cao
-- ✅ Track effort đầy đủ (8 fields: Research, Development, Testing, Deployment, Operations, Review, Documentation, Coordination)
+- Triển khai nhanh
+- Dễ sử dụng, training tối thiểu
+- Tích hợp tốt với GitLab
+- Vận hành đơn giản
+- Đáp ứng chất lượng cao
+- Track effort đầy đủ (8 fields: Research, Development, Testing, Deployment, Operations, Review, Documentation, Coordination)
 
 ---
 
-## 📋 PHẠM VI TRIỂN KHAI
+## PHẠM VI TRIỂN KHAI
 
 ### 1. ISSUE TYPES (8 types)
 
@@ -121,37 +121,37 @@ Order Received → Processing → In Production → Delivered → Closed
 ### 5. DASHBOARDS (5 dashboards)
 
 1. **Executive Dashboard**
-   - Total Effort by Phase (Research, Development, Deployment, Operations)
-   - Effort Trend
-   - Effort by Issue Type
+ - Total Effort by Phase (Research, Development, Deployment, Operations)
+ - Effort Trend
+ - Effort by Issue Type
 
 2. **Product Owner Dashboard**
-   - Sprint Progress
-   - Backlog Management
-   - Product Effort Summary
+ - Sprint Progress
+ - Backlog Management
+ - Product Effort Summary
 
 3. **Development Dashboard**
-   - My Work
-   - Sprint Board
-   - Development Effort Tracking
+ - My Work
+ - Sprint Board
+ - Development Effort Tracking
 
 4. **Support Dashboard**
-   - Service Request Queue
-   - Incident Management
-   - Operations Effort
+ - Service Request Queue
+ - Incident Management
+ - Operations Effort
 
 5. **Effort Summary Dashboard**
-   - Total Effort by Phase (Pie Chart)
-   - Effort Trend (Line Chart)
-   - Effort by Issue Type (Bar Chart)
-   - Effort by Customer (Bar Chart - cho Project)
+ - Total Effort by Phase (Pie Chart)
+ - Effort Trend (Line Chart)
+ - Effort by Issue Type (Bar Chart)
+ - Effort by Customer (Bar Chart - cho Project)
 
 ---
 
 ### 6. INTEGRATIONS
 
-- ✅ **GitLab** - Branch, MR, pipeline integration
-- ✅ **Email Notifications** - Mặc định Jira
+- **GitLab** - Branch, MR, pipeline integration
+- **Email Notifications** - Mặc định Jira
 
 ---
 
@@ -165,7 +165,7 @@ Order Received → Processing → In Production → Delivered → Closed
 
 ---
 
-## 📊 EFFORT TRACKING
+## EFFORT TRACKING
 
 ### Issue Types với Effort Fields:
 
@@ -200,26 +200,26 @@ Order Received → Processing → In Production → Delivered → Closed
 
 ---
 
-## 📈 REPORTS
+## REPORTS
 
 1. **Effort Summary Report**
-   - Total effort by phase
-   - Effort by issue type
-   - Effort trends
+ - Total effort by phase
+ - Effort by issue type
+ - Effort trends
 
 2. **Product Effort Report**
-   - Research effort
-   - Development effort
-   - Total effort
+ - Research effort
+ - Development effort
+ - Total effort
 
 3. **Project Effort Report**
-   - Effort per customer
-   - Deployment effort
-   - Operations effort
+ - Effort per customer
+ - Deployment effort
+ - Operations effort
 
 ---
 
-## ✅ CHECKLIST TRIỂN KHAI
+## CHECKLIST TRIỂN KHAI
 
 ### Phase 1: Setup Cơ Bản
 - [ ] Tạo Project
@@ -261,27 +261,27 @@ Order Received → Processing → In Production → Delivered → Closed
 
 ---
 
-## 🎯 BEST PRACTICES
+## BEST PRACTICES
 
 1. **Effort Tracking**:
-   - Log effort vào đúng phase field
-   - Update effort thường xuyên (daily/weekly)
-   - Review effort accuracy định kỳ
+ - Log effort vào đúng phase field
+ - Update effort thường xuyên (daily/weekly)
+ - Review effort accuracy định kỳ
 
 2. **Agile**:
-   - Sử dụng Story Points cho estimation
-   - Track velocity
-   - Review sprint effort
+ - Sử dụng Story Points cho estimation
+ - Track velocity
+ - Review sprint effort
 
 3. **ITIL**:
-   - Follow incident severity guidelines
-   - Track SLA compliance
-   - Document changes
+ - Follow incident severity guidelines
+ - Track SLA compliance
+ - Document changes
 
 4. **Reporting**:
-   - Review effort reports hàng tuần
-   - Compare actual vs estimated effort
-   - Identify effort trends
+ - Review effort reports hàng tuần
+ - Compare actual vs estimated effort
+ - Identify effort trends
 
 ---
 

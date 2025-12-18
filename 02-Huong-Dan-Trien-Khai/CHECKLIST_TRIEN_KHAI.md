@@ -195,49 +195,49 @@
 - [ ] Customize permissions cho từng role
 
 ### 6.2. Product Owner Permissions
-- [ ] Browse Projects: ✅
-- [ ] Create/Edit Issues: ✅
-- [ ] Transition Issues: ✅ (all)
-- [ ] Delete Issues: ❌
-- [ ] Administer Projects: ❌
-- [ ] Approve Change Request: ✅
+- [ ] Browse Projects: 
+- [ ] Create/Edit Issues: 
+- [ ] Transition Issues: (all)
+- [ ] Delete Issues: 
+- [ ] Administer Projects: 
+- [ ] Approve Change Request: 
 
 ### 6.3. Developer Permissions
-- [ ] Browse Projects: ✅
-- [ ] Create Issues: ✅ (Story, Task, Bug only)
-- [ ] Edit Issues: ✅ (Story, Task, Bug only)
-- [ ] Transition Issues: ✅ (Dev workflow only)
-- [ ] View Incident: ✅ (read-only)
-- [ ] View Change Request: ✅ (read-only)
+- [ ] Browse Projects: 
+- [ ] Create Issues: (Story, Task, Bug only)
+- [ ] Edit Issues: (Story, Task, Bug only)
+- [ ] Transition Issues: (Dev workflow only)
+- [ ] View Incident: (read-only)
+- [ ] View Change Request: (read-only)
 
 ### 6.4. QA/Tester Permissions
-- [ ] Browse Projects: ✅
-- [ ] Create Issues: ✅ (Bug only)
-- [ ] Edit Issues: ✅ (Testing results only)
-- [ ] Transition Issues: ✅ (Testing → Ready for Release)
+- [ ] Browse Projects: 
+- [ ] Create Issues: (Bug only)
+- [ ] Edit Issues: (Testing results only)
+- [ ] Transition Issues: (Testing → Ready for Release)
 
 ### 6.5. Support Permissions
-- [ ] Browse Projects: ✅
-- [ ] Create Issues: ✅ (Service Request, Incident SEV2-SEV3)
-- [ ] Edit Issues: ✅ (Service Request, Incident)
-- [ ] Transition Issues: ✅ (SR and Incident workflows)
+- [ ] Browse Projects: 
+- [ ] Create Issues: (Service Request, Incident SEV2-SEV3)
+- [ ] Edit Issues: (Service Request, Incident)
+- [ ] Transition Issues: (SR and Incident workflows)
 
 ### 6.6. SRE/DevOps Permissions
-- [ ] Browse Projects: ✅
-- [ ] Create Issues: ✅ (Incident SEV1-SEV2, Change Request, Ops Task)
-- [ ] Edit Issues: ✅ (Incident, Change Request, Ops Task)
-- [ ] Transition Issues: ✅ (Incident, Change Request workflows)
-- [ ] Approve Change Request: ✅
+- [ ] Browse Projects: 
+- [ ] Create Issues: (Incident SEV1-SEV2, Change Request, Ops Task)
+- [ ] Edit Issues: (Incident, Change Request, Ops Task)
+- [ ] Transition Issues: (Incident, Change Request workflows)
+- [ ] Approve Change Request: 
 
 ### 6.7. CAB Permissions
-- [ ] Browse Projects: ✅
-- [ ] View Issues: ✅ (all)
-- [ ] Edit Issues: ✅ (Change Request - approval only)
-- [ ] Transition Issues: ✅ (CAB Review → Approved/Rejected)
+- [ ] Browse Projects: 
+- [ ] View Issues: (all)
+- [ ] Edit Issues: (Change Request - approval only)
+- [ ] Transition Issues: (CAB Review → Approved/Rejected)
 
 ### 6.8. Jira Admin Permissions
-- [ ] All administrative permissions: ✅
-- [ ] Không tham gia vận hành: ✅
+- [ ] All administrative permissions: 
+- [ ] Không tham gia vận hành: 
 
 ### 6.9. Apply Permissions
 - [ ] Link Permission Scheme với project
@@ -253,10 +253,10 @@
 - [ ] Setup Urgency levels
 - [ ] Setup Priority calculation (Impact × Urgency)
 - [ ] Configure SLA rules (xem SLA_CONFIGURATION.md):
-  - [ ] SEV1: First Response 15 min, Resolution 4 hours, Escalation 30 min
-  - [ ] SEV2: First Response 1 hour, Resolution 8 hours, Escalation 2 hours
-  - [ ] SEV3: First Response 4 hours, Resolution 24 hours, Escalation 8 hours
-  - [ ] SEV4: First Response 1 day, Resolution 3 days, Escalation 2 days
+ - [ ] SEV1: First Response 15 min, Resolution 4 hours, Escalation 30 min
+ - [ ] SEV2: First Response 1 hour, Resolution 8 hours, Escalation 2 hours
+ - [ ] SEV3: First Response 4 hours, Resolution 24 hours, Escalation 8 hours
+ - [ ] SEV4: First Response 1 day, Resolution 3 days, Escalation 2 days
 - [ ] Setup SLA custom fields (SLA Status, First Response Time Target/Actual, Resolution Time Target/Actual, Escalation Level)
 - [ ] Configure business hours (SEV1-SEV2: 24/7, SEV3-SEV4: Business Hours)
 - [ ] Setup auto-assignment rules
@@ -272,9 +272,9 @@
 - [ ] Setup approval workflow
 - [ ] Setup Emergency Change process
 - [ ] Configure SLA rules (xem SLA_CONFIGURATION.md):
-  - [ ] Standard Change: Implementation 2 days
-  - [ ] Normal Change: Review 2 days, Approval 3 days, Implementation 5 days (Total: 10 days)
-  - [ ] Emergency Change: Review 2 hours, Approval 4 hours, Implementation 1 day (Total: 1.5 days)
+ - [ ] Standard Change: Implementation 2 days
+ - [ ] Normal Change: Review 2 days, Approval 3 days, Implementation 5 days (Total: 10 days)
+ - [ ] Emergency Change: Review 2 hours, Approval 4 hours, Implementation 1 day (Total: 1.5 days)
 - [ ] Setup SLA custom fields (SLA Status, Review/Approval/Implementation Time Target/Actual)
 - [ ] Configure business hours (Standard/Normal: Business Hours, Emergency: 24/7)
 - [ ] Setup SLA automation
@@ -285,10 +285,10 @@
 - [ ] Setup Service Catalog items
 - [ ] Configure approval workflow
 - [ ] Configure SLA rules (xem SLA_CONFIGURATION.md):
-  - [ ] Access Request: Response 2 hours, Fulfillment 1 day
-  - [ ] Information Request: Response 1 hour, Fulfillment 4 hours
-  - [ ] Service Provisioning: Response 4 hours, Fulfillment 3 days
-  - [ ] Other: Response 4 hours, Fulfillment 5 days
+ - [ ] Access Request: Response 2 hours, Fulfillment 1 day
+ - [ ] Information Request: Response 1 hour, Fulfillment 4 hours
+ - [ ] Service Provisioning: Response 4 hours, Fulfillment 3 days
+ - [ ] Other: Response 4 hours, Fulfillment 5 days
 - [ ] Setup SLA custom fields (SLA Status, Response/Fulfillment Time Target/Actual, SLA Target Date)
 - [ ] Configure business hours (Business Hours: 8:00-18:00, Monday-Friday)
 - [ ] Setup SLA automation
@@ -297,10 +297,10 @@
 - [ ] Setup Order lifecycle
 - [ ] Configure payment status workflow
 - [ ] Configure SLA rules (xem SLA_CONFIGURATION.md):
-  - [ ] Order Received → Processing: 2 hours
-  - [ ] Processing → Payment Confirmed: 1 day
-  - [ ] Payment Confirmed → In Production: 1 day
-  - [ ] Delivery: Theo Delivery Date trong order terms
+ - [ ] Order Received → Processing: 2 hours
+ - [ ] Processing → Payment Confirmed: 1 day
+ - [ ] Payment Confirmed → In Production: 1 day
+ - [ ] Delivery: Theo Delivery Date trong order terms
 - [ ] Setup SLA custom fields (SLA Status, Processing/Payment/Production Time Target/Actual, Delivery SLA Status)
 - [ ] Configure business hours (Business Hours: 8:00-18:00, Monday-Friday)
 - [ ] Setup SLA automation
@@ -557,6 +557,6 @@
 ---
 
 **Status Legend:**
-- ✅ = Completed
-- ❌ = Not applicable / Restricted
+- = Completed
+- = Not applicable / Restricted
 - [ ] = Pending

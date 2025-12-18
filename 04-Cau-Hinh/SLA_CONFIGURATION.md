@@ -66,14 +66,14 @@ Tài liệu này định nghĩa chi tiết Service Level Agreement (SLA) cho t�
 
 #### Auto-escalation:
 - **SEV1**: 
-  - Escalate to Level 1 (SRE Lead) nếu chưa acknowledged sau 15 phút
-  - Escalate to Level 2 (VP Engineering) nếu chưa resolved sau 2 giờ
-  - Escalate to Level 3 (C-level) nếu chưa resolved sau 3 giờ
+ - Escalate to Level 1 (SRE Lead) nếu chưa acknowledged sau 15 phút
+ - Escalate to Level 2 (VP Engineering) nếu chưa resolved sau 2 giờ
+ - Escalate to Level 3 (C-level) nếu chưa resolved sau 3 giờ
 - **SEV2**:
-  - Escalate to Level 1 (Support Manager) nếu chưa acknowledged sau 1 giờ
-  - Escalate to Level 2 (SRE Lead) nếu chưa resolved sau 6 giờ
+ - Escalate to Level 1 (Support Manager) nếu chưa acknowledged sau 1 giờ
+ - Escalate to Level 2 (SRE Lead) nếu chưa resolved sau 6 giờ
 - **SEV3**:
-  - Escalate to Level 1 (Support Lead) nếu chưa acknowledged sau 4 giờ
+ - Escalate to Level 1 (Support Lead) nếu chưa acknowledged sau 4 giờ
 - **SEV4**: Không auto-escalate
 
 #### Auto-notification:
@@ -161,13 +161,13 @@ Tài liệu này định nghĩa chi tiết Service Level Agreement (SLA) cho t�
 
 #### Auto-escalation:
 - **Normal Change**:
-  - Escalate nếu Review Time > 2 ngày
-  - Escalate nếu Approval Time > 3 ngày
-  - Escalate nếu Implementation Time > 5 ngày
+ - Escalate nếu Review Time > 2 ngày
+ - Escalate nếu Approval Time > 3 ngày
+ - Escalate nếu Implementation Time > 5 ngày
 - **Emergency Change**:
-  - Escalate nếu Review Time > 2 giờ
-  - Escalate nếu Approval Time > 4 giờ
-  - Escalate nếu Implementation Time > 1 ngày
+ - Escalate nếu Review Time > 2 giờ
+ - Escalate nếu Approval Time > 4 giờ
+ - Escalate nếu Implementation Time > 1 ngày
 
 #### Auto-notification:
 - **Normal Change**: Notify CAB members khi vào CAB Review
@@ -356,12 +356,12 @@ Tài liệu này định nghĩa chi tiết Service Level Agreement (SLA) cho t�
 
 | Field Name | Field Type | Description | Auto-calculated |
 |------------|------------|-------------|-----------------|
-| **SLA Status** | Select List | On Track, At Risk, Breached | ✅ Yes |
-| **SLA Breach** | Yes/No | Có vượt SLA không | ✅ Yes |
-| **SLA Target Date** | Date | Ngày target hoàn thành | ✅ Yes |
-| **Created Time** | DateTime | Thời gian tạo issue | ✅ Yes |
-| **First Response Time** | Number | Thời gian phản hồi đầu tiên | ✅ Yes |
-| **Resolution/Fulfillment Time** | Number | Thời gian xử lý/hoàn thành | ✅ Yes |
+| **SLA Status** | Select List | On Track, At Risk, Breached | Yes |
+| **SLA Breach** | Yes/No | Có vượt SLA không | Yes |
+| **SLA Target Date** | Date | Ngày target hoàn thành | Yes |
+| **Created Time** | DateTime | Thời gian tạo issue | Yes |
+| **First Response Time** | Number | Thời gian phản hồi đầu tiên | Yes |
+| **Resolution/Fulfillment Time** | Number | Thời gian xử lý/hoàn thành | Yes |
 
 ### 5.2. Issue Type Specific Fields
 
@@ -406,12 +406,12 @@ Tài liệu này định nghĩa chi tiết Service Level Agreement (SLA) cho t�
 #### SLA Status Calculation:
 ```
 IF (Current Time - Start Time) >= (Target Time * 0.8) AND (Current Time - Start Time) < Target Time:
-    SLA Status = "At Risk"
+ SLA Status = "At Risk"
 ELSE IF (Current Time - Start Time) >= Target Time:
-    SLA Status = "Breached"
-    SLA Breach = Yes
+ SLA Status = "Breached"
+ SLA Breach = Yes
 ELSE:
-    SLA Status = "On Track"
+ SLA Status = "On Track"
 ```
 
 #### Auto-escalation:
@@ -593,22 +593,22 @@ project = "PROJECT" AND issuetype = "Service Order" AND "Delivery Date" <= +3d A
 ## 10. BEST PRACTICES
 
 ### 10.1. SLA Definition
-- ✅ Định nghĩa SLA rõ ràng, có thể đo lường được
-- ✅ Phân biệt business hours và 24/7
-- ✅ Có escalation path rõ ràng
-- ✅ Review và điều chỉnh SLA định kỳ
+- Định nghĩa SLA rõ ràng, có thể đo lường được
+- Phân biệt business hours và 24/7
+- Có escalation path rõ ràng
+- Review và điều chỉnh SLA định kỳ
 
 ### 10.2. SLA Monitoring
-- ✅ Monitor SLA status real-time
-- ✅ Alert khi At Risk (80% target)
-- ✅ Escalate khi Breached
-- ✅ Review SLA compliance hàng tuần
+- Monitor SLA status real-time
+- Alert khi At Risk (80% target)
+- Escalate khi Breached
+- Review SLA compliance hàng tuần
 
 ### 10.3. SLA Improvement
-- ✅ Phân tích root cause của SLA breaches
-- ✅ Cải thiện processes để đáp ứng SLA
-- ✅ Training team về SLA requirements
-- ✅ Điều chỉnh SLA nếu không realistic
+- Phân tích root cause của SLA breaches
+- Cải thiện processes để đáp ứng SLA
+- Training team về SLA requirements
+- Điều chỉnh SLA nếu không realistic
 
 ---
 

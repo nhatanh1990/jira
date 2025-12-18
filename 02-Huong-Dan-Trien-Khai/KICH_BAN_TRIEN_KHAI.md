@@ -4,7 +4,7 @@ Tài liệu này mô tả các kịch bản triển khai hệ thống Jira cho c
 
 ---
 
-## 📋 MỤC LỤC
+## MỤC LỤC
 
 1. [Kịch bản 1: Startup/SMB - Triển khai Cơ Bản](#1-kịch-bản-1-startupsmb---triển-khai-cơ-bản)
 2. [Kịch bản 2: Enterprise - Triển khai Nâng Cao](#2-kịch-bản-2-enterprise---triển-khai-nâng-cao)
@@ -37,31 +37,31 @@ Tài liệu này mô tả các kịch bản triển khai hệ thống Jira cho c
 #### Day 1-2: Project Setup
 - [ ] Tạo Jira project (Software Development template)
 - [ ] Cấu hình 8 issue types:
-  - Epic, Story, Task, Bug
-  - Incident, Change Request, Service Request, Service Order
+ - Epic, Story, Task, Bug
+ - Incident, Change Request, Service Request, Service Order
 - [ ] Setup 7 roles:
-  - Product Owner, Developer, QA/Tester, Support, SRE/DevOps, CAB, Jira Admin
+ - Product Owner, Developer, QA/Tester, Support, SRE/DevOps, CAB, Jira Admin
 - [ ] Tạo permission schemes
 
 #### Day 3-4: Custom Fields
 - [ ] Tạo effort tracking fields:
-  - Research Effort, Development Effort, Testing Effort, Deployment Effort, Operations Effort
-  - Review Effort, Documentation Effort, Coordination Effort
-  - Total Effort (calculated)
+ - Research Effort, Development Effort, Testing Effort, Deployment Effort, Operations Effort
+ - Review Effort, Documentation Effort, Coordination Effort
+ - Total Effort (calculated)
 - [ ] Tạo classification fields:
-  - Work Type (Product, Project, Support, ITIL)
-  - Phase (Research, Development, Testing, Deployment, Operations)
-  - Customer (User Picker)
+ - Work Type (Product, Project, Support, ITIL)
+ - Phase (Research, Development, Testing, Deployment, Operations)
+ - Customer (User Picker)
 - [ ] Cấu hình field configuration
 
 #### Day 5: Workflows
 - [ ] Setup Agile workflow (Story/Task/Bug)
 - [ ] Setup Epic workflow
 - [ ] Setup ITIL workflows:
-  - Incident workflow
-  - Change Request workflow
-  - Service Request workflow
-  - Service Order workflow
+ - Incident workflow
+ - Change Request workflow
+ - Service Request workflow
+ - Service Order workflow
 
 **Deliverable**: Project đã được setup cơ bản, có thể tạo issues.
 
@@ -269,16 +269,16 @@ Tài liệu này mô tả các kịch bản triển khai hệ thống Jira cho c
 #### Tasks:
 - [ ] Đánh giá hệ thống hiện tại
 - [ ] Liệt kê dữ liệu cần migrate:
-  - Issues
-  - Users
-  - Projects
-  - Attachments
-  - Comments
-  - History
+ - Issues
+ - Users
+ - Projects
+ - Attachments
+ - Comments
+ - History
 - [ ] Xác định mapping:
-  - Issue types mapping
-  - Status mapping
-  - Custom fields mapping
+ - Issue types mapping
+ - Status mapping
+ - Custom fields mapping
 - [ ] Tạo migration plan
 
 **Deliverable**: Migration plan đã được approve.
@@ -309,9 +309,9 @@ Tài liệu này mô tả các kịch bản triển khai hệ thống Jira cho c
 - [ ] Import users
 - [ ] Import projects
 - [ ] Import issues (phased):
-  - Phase 1: Active issues
-  - Phase 2: Recent closed issues
-  - Phase 3: Historical issues
+ - Phase 1: Active issues
+ - Phase 2: Recent closed issues
+ - Phase 3: Historical issues
 - [ ] Import attachments
 - [ ] Import comments
 - [ ] Validate migration
@@ -363,9 +363,9 @@ Tài liệu này mô tả các kịch bản triển khai hệ thống Jira cho c
 
 #### Week 1: Planning
 - [ ] Xác định project structure:
-  - Product projects
-  - Internal projects
-  - Support projects
+ - Product projects
+ - Internal projects
+ - Support projects
 - [ ] Xác định project hierarchy
 - [ ] Xác định shared components
 
@@ -384,8 +384,8 @@ Tài liệu này mô tả các kịch bản triển khai hệ thống Jira cho c
 #### Week 3: Roles & Permissions
 - [ ] Setup roles cho từng team
 - [ ] Cấu hình permissions:
-  - Team-specific permissions
-  - Cross-team permissions
+ - Team-specific permissions
+ - Cross-team permissions
 - [ ] Setup project roles
 
 #### Week 4: Workflows
@@ -525,7 +525,7 @@ Tài liệu này mô tả các kịch bản triển khai hệ thống Jira cho c
 
 ---
 
-## 📊 TỔNG KẾT
+## TỔNG KẾT
 
 ### Kịch bản phù hợp:
 

@@ -39,97 +39,130 @@
 #### **Epic**
 - **Mục đích**: Quản lý các tính năng lớn, chứa nhiều Story
 - **Custom Fields**:
-  - Epic Name (mặc định)
-  - Epic Link (mặc định)
-  - Business Value
-  - Target Release
-  - AI Impact Level (High/Medium/Low)
-  - Manufacturing Impact (Yes/No)
+ - Epic Name (mặc định)
+ - Epic Link (mặc định)
+ - Business Value
+ - Target Release
+ - AI Impact Level (High/Medium/Low)
+ - Manufacturing Impact (Yes/No)
 
 #### **Story**
 - **Mục đích**: Yêu cầu chức năng từ góc độ người dùng
 - **Custom Fields**:
-  - Story Points (1, 2, 3, 5, 8, 13, 21)
-  - Acceptance Criteria (Text Area)
-  - Priority (Highest, High, Medium, Low, Lowest)
-  - Component
-  - Labels
-  - AI Feature Type (ML Model, Data Pipeline, API, UI/UX, Other)
-  - Manufacturing Process (Assembly, Quality Control, Inventory, Logistics, Other)
+ - Story Points (1, 2, 3, 5, 8, 13, 21)
+ - Acceptance Criteria (Text Area)
+ - Priority (Highest, High, Medium, Low, Lowest)
+ - Component
+ - Labels
+ - AI Feature Type (ML Model, Data Pipeline, API, UI/UX, Other)
+ - Manufacturing Process (Assembly, Quality Control, Inventory, Logistics, Other)
 
 #### **Task**
 - **Mục đích**: Công việc cụ thể cần thực hiện
 - **Custom Fields**:
-  - Original Estimate (hours)
-  - Time Spent (hours)
-  - Remaining Estimate (hours)
-  - Assignee
-  - Component
-  - Labels
+ - Original Estimate (hours)
+ - Time Spent (hours)
+ - Remaining Estimate (hours)
+ - Assignee
+ - Component
+ - Labels
 
 #### **Bug**
 - **Mục đích**: Lỗi cần được sửa
 - **Custom Fields**:
-  - Severity (Critical, High, Medium, Low)
-  - Environment (Production, Staging, Development)
-  - Steps to Reproduce (Text Area)
-  - Expected Result (Text Area)
-  - Actual Result (Text Area)
-  - Bug Type (Functional, Performance, Security, UI/UX, Data, AI Model)
+ - Severity (Critical, High, Medium, Low)
+ - Environment (Production, Staging, Development)
+ - Steps to Reproduce (Text Area)
+ - Expected Result (Text Area)
+ - Actual Result (Text Area)
+ - Bug Type (Functional, Performance, Security, UI/UX, Data, AI Model)
 
 ### 2.2. ITIL Issue Types
 
 #### **Service Request (SR)**
 - **Mục đích**: Yêu cầu dịch vụ tiêu chuẩn từ người dùng
 - **Custom Fields**:
-  - Request Type (Access Request, Information Request, Service Provisioning, Other)
-  - Requested By (User Picker)
-  - Requested Date (Date Picker)
-  - Service Catalog Item
-  - SLA Target (Date)
-  - Priority (P1-P4)
-  - Approval Status (Pending, Approved, Rejected)
+ - Request Type (Access Request, Information Request, Service Provisioning, Other)
+ - Requested By (User Picker)
+ - Requested Date (Date Picker)
+ - Service Catalog Item
+ - Priority (P1-P4)
+ - Approval Status (Pending, Approved, Rejected)
+ - **SLA Fields**:
+ - SLA Status (On Track, At Risk, Breached)
+ - Response Time Target (hours) - Auto-set dựa trên Request Type
+ - Response Time Actual (hours) - Auto-calculated
+ - Fulfillment Time Target (hours/days) - Auto-set dựa trên Request Type
+ - Fulfillment Time Actual (hours/days) - Auto-calculated
+ - SLA Target Date (Date) - Auto-calculated
+ - SLA Breach (Yes/No) - Auto-set
 
 #### **Service Order (SO)**
 - **Mục đích**: Đơn hàng dịch vụ có tính phí
 - **Custom Fields**:
-  - Order Number
-  - Customer (User Picker)
-  - Order Date (Date Picker)
-  - Service Items (Text Area)
-  - Total Cost (Number)
-  - Payment Status (Pending, Paid, Cancelled)
-  - Delivery Date (Date Picker)
-  - Manufacturing Line (Text)
+ - Order Number
+ - Customer (User Picker)
+ - Order Date (Date Picker)
+ - Service Items (Text Area)
+ - Total Cost (Number)
+ - Payment Status (Pending, Paid, Cancelled)
+ - Delivery Date (Date Picker)
+ - Manufacturing Line (Text)
+ - **SLA Fields**:
+ - SLA Status (On Track, At Risk, Breached)
+ - Processing Time Target (hours) - 2 giờ
+ - Processing Time Actual (hours) - Auto-calculated
+ - Payment Confirmation Time Target (days) - 1 ngày
+ - Payment Confirmation Time Actual (days) - Auto-calculated
+ - Production Start Time Target (days) - 1 ngày sau payment
+ - Production Start Time Actual (days) - Auto-calculated
+ - Delivery SLA Status (On Track, At Risk, Breached) - Dựa trên Delivery Date
+ - SLA Breach (Yes/No) - Auto-set
 
 #### **Incident**
 - **Mục đích**: Sự cố cần xử lý theo ITIL
 - **Custom Fields**:
-  - Severity (SEV1, SEV2, SEV3, SEV4)
-  - Impact (Critical, High, Medium, Low)
-  - Urgency (Critical, High, Medium, Low)
-  - Priority (P1-P4) - Auto-calculated từ Impact + Urgency
-  - Incident Category (Hardware, Software, Network, AI Service, Manufacturing System, Other)
-  - Root Cause (Text Area)
-  - Resolution (Text Area)
-  - Resolution Time (hours) - Auto-calculated
-  - First Response Time (minutes) - Auto-calculated
-  - Affected Services (Multi-select)
-  - Related Change Request (Issue Link)
+ - Severity (SEV1, SEV2, SEV3, SEV4)
+ - Impact (Critical, High, Medium, Low)
+ - Urgency (Critical, High, Medium, Low)
+ - Priority (P1-P4) - Auto-calculated từ Impact + Urgency
+ - Incident Category (Hardware, Software, Network, AI Service, Manufacturing System, Other)
+ - Root Cause (Text Area)
+ - Resolution (Text Area)
+ - Affected Services (Multi-select)
+ - Related Change Request (Issue Link)
+ - **SLA Fields**:
+ - SLA Status (On Track, At Risk, Breached)
+ - First Response Time Target (minutes) - Auto-set dựa trên Severity
+ - First Response Time Actual (minutes) - Auto-calculated
+ - Resolution Time Target (hours) - Auto-set dựa trên Severity
+ - Resolution Time Actual (hours) - Auto-calculated
+ - Escalation Level (None, Level 1, Level 2, Level 3)
+ - Escalation Reason (Text Area)
+ - SLA Breach (Yes/No) - Auto-set
 
 #### **Change Request (CR)**
 - **Mục đích**: Yêu cầu thay đổi hệ thống theo ITIL
 - **Custom Fields**:
-  - Change Type (Standard, Normal, Emergency)
-  - Change Category (Infrastructure, Application, Security, AI Model Update, Manufacturing Process)
-  - Risk Level (Low, Medium, High, Critical)
-  - Change Reason (Text Area)
-  - Implementation Plan (Text Area)
-  - Rollback Plan (Text Area)
-  - CAB Approval (Approved, Rejected, Pending)
-  - Implementation Date (Date Picker)
-  - Post-Implementation Review (Text Area)
-  - Related Incident (Issue Link)
+ - Change Type (Standard, Normal, Emergency)
+ - Change Category (Infrastructure, Application, Security, AI Model Update, Manufacturing Process)
+ - Risk Level (Low, Medium, High, Critical)
+ - Change Reason (Text Area)
+ - Implementation Plan (Text Area)
+ - Rollback Plan (Text Area)
+ - CAB Approval (Approved, Rejected, Pending)
+ - Implementation Date (Date Picker)
+ - Post-Implementation Review (Text Area)
+ - Related Incident (Issue Link)
+ - **SLA Fields**:
+ - SLA Status (On Track, At Risk, Breached)
+ - Review Time Target (hours/days) - Auto-set dựa trên Change Type
+ - Review Time Actual (hours/days) - Auto-calculated
+ - Approval Time Target (hours/days) - Auto-set dựa trên Change Type
+ - Approval Time Actual (hours/days) - Auto-calculated
+ - Implementation Time Target (days) - Auto-set dựa trên Change Type
+ - Implementation Time Actual (days) - Auto-calculated
+ - SLA Breach (Yes/No) - Auto-set
 
 ---
 
@@ -139,8 +172,8 @@
 
 ```
 To Do → In Progress → Code Review → Testing → Ready for Release → Done
-         ↓                              ↑
-         └────────── Blocked ───────────┘
+ ↓ ↑
+ └────────── Blocked ───────────┘
 ```
 
 **Transitions**:
@@ -162,8 +195,8 @@ To Do → In Progress → Done
 
 ```
 New → In Progress → Pending Approval → Approved → Fulfilled → Closed
-                    ↓
-                 Rejected → Closed
+ ↓
+ Rejected → Closed
 ```
 
 **Transitions**:
@@ -178,16 +211,16 @@ New → In Progress → Pending Approval → Approved → Fulfilled → Closed
 
 ```
 Order Received → Processing → Payment Pending → In Production → Shipped → Delivered → Closed
-                                    ↓
-                              Payment Failed → Cancelled
+ ↓
+ Payment Failed → Cancelled
 ```
 
 ### 3.5. Incident Workflow (ITIL)
 
 ```
 New → Acknowledged → Investigating → Mitigated → Resolved → Closed
-      ↓                ↓
-   On Hold         Escalated
+ ↓ ↓
+ On Hold Escalated
 ```
 
 **Transitions**:
@@ -209,8 +242,8 @@ New → Acknowledged → Investigating → Mitigated → Resolved → Closed
 
 ```
 Draft → Submitted → Under Review → CAB Review → Approved → Implementation → Testing → Completed → Closed
-                        ↓              ↓
-                    Rejected      Rejected → Closed
+ ↓ ↓
+ Rejected Rejected → Closed
 ```
 
 **Transitions**:
@@ -233,62 +266,62 @@ Draft → Submitted → Under Review → CAB Review → Approved → Implementat
 ### 4.1. Product Owner (PO)
 
 **Permissions**:
-- Browse Projects: ✅
-- Create Issues: ✅
-- Edit Issues: ✅
-- Delete Issues: ❌
-- Transition Issues: ✅ (tất cả)
-- Assign Issues: ✅
-- Assignable User: ✅
-- Manage Components: ✅
-- Manage Versions: ✅
-- Edit Version/Release Notes: ✅
-- View Read-Only Workflow: ✅
-- Create Attachments: ✅
-- Delete All Attachments: ❌
-- Delete Own Attachments: ✅
-- Work On Issues: ✅
-- View Voters and Watchers: ✅
-- Manage Watchers: ✅
-- Add Comments: ✅
-- Edit All Comments: ✅
-- Edit Own Comments: ✅
-- Delete All Comments: ❌
-- Delete Own Comments: ✅
-- Administer Projects: ❌
-- Close Issues: ✅
-- Modify Reporter: ✅
-- Move Issues: ✅
-- Resolve Issues: ✅
-- Schedule Issues: ✅
-- Set Issue Security: ❌
-- View Change History: ✅
+- Browse Projects: 
+- Create Issues: 
+- Edit Issues: 
+- Delete Issues: 
+- Transition Issues: (tất cả)
+- Assign Issues: 
+- Assignable User: 
+- Manage Components: 
+- Manage Versions: 
+- Edit Version/Release Notes: 
+- View Read-Only Workflow: 
+- Create Attachments: 
+- Delete All Attachments: 
+- Delete Own Attachments: 
+- Work On Issues: 
+- View Voters and Watchers: 
+- Manage Watchers: 
+- Add Comments: 
+- Edit All Comments: 
+- Edit Own Comments: 
+- Delete All Comments: 
+- Delete Own Comments: 
+- Administer Projects: 
+- Close Issues: 
+- Modify Reporter: 
+- Move Issues: 
+- Resolve Issues: 
+- Schedule Issues: 
+- Set Issue Security: 
+- View Change History: 
 
 **Issue Type Restrictions**: Không có
 
 **Approval Permissions**:
-- Approve Change Request: ✅
+- Approve Change Request: 
 
 ### 4.2. Developer Team
 
 **Permissions**:
-- Browse Projects: ✅
-- Create Issues: ✅ (Story, Task, Bug)
-- Edit Issues: ✅ (Story, Task, Bug)
-- Delete Issues: ❌
-- Transition Issues: ✅ (chỉ trong luồng Dev: To Do → In Progress → Code Review)
-- Assign Issues: ✅ (chỉ assign cho mình)
-- Assignable User: ✅
-- Create Attachments: ✅
-- Delete Own Attachments: ✅
-- Work On Issues: ✅ (Log Work)
-- Add Comments: ✅
-- Edit Own Comments: ✅
-- View Change History: ✅
-- View Incident: ✅ (read-only)
-- View Change Request: ✅ (read-only)
-- Create GitLab Branch: ✅
-- Create Merge Request: ✅
+- Browse Projects: 
+- Create Issues: (Story, Task, Bug)
+- Edit Issues: (Story, Task, Bug)
+- Delete Issues: 
+- Transition Issues: (chỉ trong luồng Dev: To Do → In Progress → Code Review)
+- Assign Issues: (chỉ assign cho mình)
+- Assignable User: 
+- Create Attachments: 
+- Delete Own Attachments: 
+- Work On Issues: (Log Work)
+- Add Comments: 
+- Edit Own Comments: 
+- View Change History: 
+- View Incident: (read-only)
+- View Change Request: (read-only)
+- Create GitLab Branch: 
+- Create Merge Request: 
 
 **Issue Type Restrictions**:
 - Cannot create: Epic, Service Request, Service Order, Incident, Change Request (ops scope)
@@ -296,14 +329,14 @@ Draft → Submitted → Under Review → CAB Review → Approved → Implementat
 ### 4.3. QA / Tester
 
 **Permissions**:
-- Browse Projects: ✅
-- Create Issues: ✅ (Bug)
-- Edit Issues: ✅ (chỉ phần Testing results)
-- Transition Issues: ✅ (Testing → Ready for Release, Testing → In Progress)
-- Work On Issues: ✅ (Log Work)
-- Add Comments: ✅
-- Edit Own Comments: ✅
-- View Change History: ✅
+- Browse Projects: 
+- Create Issues: (Bug)
+- Edit Issues: (chỉ phần Testing results)
+- Transition Issues: (Testing → Ready for Release, Testing → In Progress)
+- Work On Issues: (Log Work)
+- Add Comments: 
+- Edit Own Comments: 
+- View Change History: 
 
 **Issue Type Restrictions**:
 - Cannot create: Epic, Story, Task (dev), Service Request, Service Order, Incident, Change Request
@@ -311,14 +344,14 @@ Draft → Submitted → Under Review → CAB Review → Approved → Implementat
 ### 4.4. Support / Customer Service
 
 **Permissions**:
-- Browse Projects: ✅
-- Create Issues: ✅ (Service Request, Incident SEV2-SEV3)
-- Edit Issues: ✅ (Service Request, Incident)
-- Transition Issues: ✅ (trong workflow SR và Incident)
-- Work On Issues: ✅ (Log Work)
-- Add Comments: ✅
-- Upload Attachments: ✅
-- View Change History: ✅
+- Browse Projects: 
+- Create Issues: (Service Request, Incident SEV2-SEV3)
+- Edit Issues: (Service Request, Incident)
+- Transition Issues: (trong workflow SR và Incident)
+- Work On Issues: (Log Work)
+- Add Comments: 
+- Upload Attachments: 
+- View Change History: 
 
 **Issue Type Restrictions**:
 - Cannot create: Epic, Story, Task, Bug, Change Request
@@ -327,18 +360,18 @@ Draft → Submitted → Under Review → CAB Review → Approved → Implementat
 ### 4.5. SRE / DevOps
 
 **Permissions**:
-- Browse Projects: ✅
-- Create Issues: ✅ (Incident SEV1-SEV2, Change Request, Ops Task)
-- Edit Issues: ✅ (Incident, Change Request, Ops Task)
-- Transition Issues: ✅ (Incident: Investigating → Mitigated → Resolved, Change Request: Implementation → Testing)
-- Approve Change Request: ✅ (deployment)
-- Work On Issues: ✅
-- View Logs & Alerts: ✅
-- Manage Environments: ✅ (Prod/Staging)
-- Run GitLab Pipeline: ✅
-- Add Comments: ✅
-- Edit Own Comments: ✅
-- View Change History: ✅
+- Browse Projects: 
+- Create Issues: (Incident SEV1-SEV2, Change Request, Ops Task)
+- Edit Issues: (Incident, Change Request, Ops Task)
+- Transition Issues: (Incident: Investigating → Mitigated → Resolved, Change Request: Implementation → Testing)
+- Approve Change Request: (deployment)
+- Work On Issues: 
+- View Logs & Alerts: 
+- Manage Environments: (Prod/Staging)
+- Run GitLab Pipeline: 
+- Add Comments: 
+- Edit Own Comments: 
+- View Change History: 
 
 **Issue Type Restrictions**:
 - Cannot create: Epic, Story (dev), Bug
@@ -346,13 +379,13 @@ Draft → Submitted → Under Review → CAB Review → Approved → Implementat
 ### 4.6. Change Advisory Board (CAB)
 
 **Permissions**:
-- Browse Projects: ✅
-- View Issues: ✅ (tất cả)
-- Edit Issues: ✅ (Change Request - chỉ phần approval)
-- Transition Issues: ✅ (CAB Review → Approved/Rejected)
-- Add Comments: ✅ (required fields)
-- View Change History: ✅
-- View Logs & RCA: ✅
+- Browse Projects: 
+- View Issues: (tất cả)
+- Edit Issues: (Change Request - chỉ phần approval)
+- Transition Issues: (CAB Review → Approved/Rejected)
+- Add Comments: (required fields)
+- View Change History: 
+- View Logs & RCA: 
 
 **Issue Type Restrictions**:
 - Chỉ xử lý Change Request
@@ -360,12 +393,12 @@ Draft → Submitted → Under Review → CAB Review → Approved → Implementat
 ### 4.7. Jira Admin
 
 **Permissions**: Tất cả quyền quản trị
-- Administer Projects: ✅
-- Manage Workflows: ✅
-- Create Projects: ✅
-- Manage Permission Schemes: ✅
-- Create Custom Fields: ✅
-- Global Configuration: ✅
+- Administer Projects: 
+- Manage Workflows: 
+- Create Projects: 
+- Manage Permission Schemes: 
+- Create Custom Fields: 
+- Global Configuration: 
 
 **Restriction**: KHÔNG tham gia vận hành sản phẩm
 
@@ -461,190 +494,190 @@ Draft → Submitted → Under Review → CAB Review → Approved → Implementat
 
 **Gadgets**:
 1. **Portfolio Summary**
-   - Tổng số Epic đang thực hiện
-   - Tổng số Story Points đã hoàn thành
-   - Velocity trend (3 tháng)
+ - Tổng số Epic đang thực hiện
+ - Tổng số Story Points đã hoàn thành
+ - Velocity trend (3 tháng)
 
 2. **ITIL Service Health**
-   - Số lượng Incident theo Severity (pie chart)
-   - MTTR (Mean Time To Resolve) trend
-   - SLA Compliance Rate
-   - Change Success Rate
+ - Số lượng Incident theo Severity (pie chart)
+ - MTTR (Mean Time To Resolve) trend
+ - SLA Compliance Rate
+ - Change Success Rate
 
 3. **AI Projects Overview**
-   - Số lượng AI features đang phát triển
-   - AI Model Performance metrics
-   - AI-related incidents
+ - Số lượng AI features đang phát triển
+ - AI Model Performance metrics
+ - AI-related incidents
 
 4. **Manufacturing Impact**
-   - Số lượng issues liên quan đến sản xuất
-   - Manufacturing efficiency metrics
-   - Service Orders status
+ - Số lượng issues liên quan đến sản xuất
+ - Manufacturing efficiency metrics
+ - Service Orders status
 
 5. **Team Performance**
-   - Velocity by team
-   - Effort variance
-   - Quality metrics (bug rate)
+ - Velocity by team
+ - Effort variance
+ - Quality metrics (bug rate)
 
 6. **Financial Overview**
-   - Service Order revenue
-   - Project costs
-   - ROI by project
+ - Service Order revenue
+ - Project costs
+ - ROI by project
 
 ### 7.2. Product Owner Dashboard
 
 **Gadgets**:
 1. **Sprint Progress**
-   - Burndown chart
-   - Story Points completed vs planned
-   - Issues by status
+ - Burndown chart
+ - Story Points completed vs planned
+ - Issues by status
 
 2. **Backlog Management**
-   - Epic progress
-   - Story prioritization
-   - Dependencies
+ - Epic progress
+ - Story prioritization
+ - Dependencies
 
 3. **Release Planning**
-   - Version progress
-   - Release notes
-   - Change Requests pending approval
+ - Version progress
+ - Release notes
+ - Change Requests pending approval
 
 4. **Team Velocity**
-   - Velocity chart (last 5 sprints)
-   - Forecast completion
+ - Velocity chart (last 5 sprints)
+ - Forecast completion
 
 5. **Quality Metrics**
-   - Bug rate
-   - Test coverage
-   - Defect density
+ - Bug rate
+ - Test coverage
+ - Defect density
 
 ### 7.3. Development Team Dashboard
 
 **Gadgets**:
 1. **My Work**
-   - Assigned issues
-   - In Progress issues
-   - Code Review queue
+ - Assigned issues
+ - In Progress issues
+ - Code Review queue
 
 2. **Sprint Board**
-   - Kanban board
-   - Story progress
-   - Blocked issues
+ - Kanban board
+ - Story progress
+ - Blocked issues
 
 3. **GitLab Integration**
-   - Active branches
-   - Merge Requests status
-   - Pipeline status
+ - Active branches
+ - Merge Requests status
+ - Pipeline status
 
 4. **Time Tracking**
-   - Time spent this sprint
-   - Remaining estimate
-   - Effort variance
+ - Time spent this sprint
+ - Remaining estimate
+ - Effort variance
 
 ### 7.4. QA Dashboard
 
 **Gadgets**:
 1. **Testing Queue**
-   - Issues ready for testing
-   - Test execution status
-   - Bug reports
+ - Issues ready for testing
+ - Test execution status
+ - Bug reports
 
 2. **Quality Metrics**
-   - Bugs found vs fixed
-   - Test coverage
-   - Defect leakage
+ - Bugs found vs fixed
+ - Test coverage
+ - Defect leakage
 
 3. **Test Results**
-   - Pass/fail rate
-   - Environment status
-   - Regression tests
+ - Pass/fail rate
+ - Environment status
+ - Regression tests
 
 ### 7.5. Support Dashboard
 
 **Gadgets**:
 1. **Service Request Queue**
-   - Open SRs
-   - SLA status
-   - Pending approvals
+ - Open SRs
+ - SLA status
+ - Pending approvals
 
 2. **Incident Management**
-   - Active incidents
-   - SLA compliance
-   - Escalated issues
+ - Active incidents
+ - SLA compliance
+ - Escalated issues
 
 3. **Customer Satisfaction**
-   - Response time
-   - Resolution time
-   - Customer feedback
+ - Response time
+ - Resolution time
+ - Customer feedback
 
 ### 7.6. SRE/DevOps Dashboard
 
 **Gadgets**:
 1. **Incident Management**
-   - Active SEV1/SEV2 incidents
-   - MTTR trend
-   - Incident trends
+ - Active SEV1/SEV2 incidents
+ - MTTR trend
+ - Incident trends
 
 2. **Change Management**
-   - Change Requests in progress
-   - Deployment pipeline
-   - Rollback status
+ - Change Requests in progress
+ - Deployment pipeline
+ - Rollback status
 
 3. **Infrastructure Health**
-   - System alerts
-   - Environment status
-   - Performance metrics
+ - System alerts
+ - Environment status
+ - Performance metrics
 
 4. **AI Service Monitoring**
-   - AI model performance
-   - API response times
-   - Error rates
+ - AI model performance
+ - API response times
+ - Error rates
 
 ### 7.7. Manufacturing Dashboard
 
 **Gadgets**:
 1. **Production Issues**
-   - Issues by manufacturing process
-   - Critical issues
-   - Resolution time
+ - Issues by manufacturing process
+ - Critical issues
+ - Resolution time
 
 2. **Service Orders**
-   - Orders in production
-   - Delivery status
-   - Payment status
+ - Orders in production
+ - Delivery status
+ - Payment status
 
 3. **Efficiency Metrics**
-   - Manufacturing efficiency
-   - Process improvements
-   - Quality metrics
+ - Manufacturing efficiency
+ - Process improvements
+ - Quality metrics
 
 4. **AI in Manufacturing**
-   - AI features in production
-   - Model performance
-   - Automation impact
+ - AI features in production
+ - Model performance
+ - Automation impact
 
 ### 7.8. ITIL Service Management Dashboard
 
 **Gadgets**:
 1. **Service Health**
-   - Incident trends
-   - Service availability
-   - SLA compliance
+ - Incident trends
+ - Service availability
+ - SLA compliance
 
 2. **Change Management**
-   - Change success rate
-   - Failed changes
-   - CAB approvals
+ - Change success rate
+ - Failed changes
+ - CAB approvals
 
 3. **Service Catalog**
-   - Service Request trends
-   - Popular services
-   - Fulfillment time
+ - Service Request trends
+ - Popular services
+ - Fulfillment time
 
 4. **Problem Management**
-   - Root cause analysis
-   - Recurring incidents
-   - Known errors
+ - Root cause analysis
+ - Recurring incidents
+ - Known errors
 
 ---
 
@@ -687,31 +720,31 @@ Draft → Submitted → Under Review → CAB Review → Approved → Implementat
 **Performance Metrics**:
 
 1. **Velocity**
-   - Story Points completed per sprint
-   - Track 5 sprints để có baseline
-   - Forecast dựa trên velocity trung bình
+ - Story Points completed per sprint
+ - Track 5 sprints để có baseline
+ - Forecast dựa trên velocity trung bình
 
 2. **Quality Metrics**
-   - Bug rate: Số bugs / Story Points
-   - Defect leakage: Bugs found in production / Total bugs
-   - Test coverage: % code được test
+ - Bug rate: Số bugs / Story Points
+ - Defect leakage: Bugs found in production / Total bugs
+ - Test coverage: % code được test
 
 3. **Efficiency Metrics**
-   - Effort variance: Độ chính xác của estimate
-   - Cycle time: Thời gian từ To Do → Done
-   - Lead time: Thời gian từ tạo issue → Done
+ - Effort variance: Độ chính xác của estimate
+ - Cycle time: Thời gian từ To Do → Done
+ - Lead time: Thời gian từ tạo issue → Done
 
 4. **AI-Specific Metrics**
-   - Model accuracy
-   - Inference time
-   - Data quality score
-   - Model drift detection
+ - Model accuracy
+ - Inference time
+ - Data quality score
+ - Model drift detection
 
 5. **Manufacturing Metrics**
-   - Production efficiency
-   - Quality rate
-   - Downtime reduction
-   - Process improvement impact
+ - Production efficiency
+ - Quality rate
+ - Downtime reduction
+ - Process improvement impact
 
 **Performance Dashboard**:
 - Team velocity chart
@@ -752,11 +785,15 @@ Draft → Submitted → Under Review → CAB Review → Approved → Implementat
 - P3: (Impact=Medium) OR (Urgency=Medium)
 - P4: Impact=Low AND Urgency=Low
 
-**SLA Configuration**:
-- SEV1: First Response 15 phút, Resolution 4 giờ
-- SEV2: First Response 1 giờ, Resolution 8 giờ
-- SEV3: First Response 4 giờ, Resolution 24 giờ
-- SEV4: First Response 1 ngày, Resolution 3 ngày
+**SLA Configuration** (chi tiết xem SLA_CONFIGURATION.md):
+- **SEV1 (Critical)**: First Response 15 phút, Resolution 4 giờ, Escalation 30 phút
+- **SEV2 (High)**: First Response 1 giờ, Resolution 8 giờ, Escalation 2 giờ
+- **SEV3 (Medium)**: First Response 4 giờ, Resolution 24 giờ, Escalation 8 giờ
+- **SEV4 (Low)**: First Response 1 ngày (business hours), Resolution 3 ngày, Escalation 2 ngày
+
+**Business Hours**:
+- SEV1-SEV2: 24/7 (tất cả thời gian)
+- SEV3-SEV4: Business Hours (8:00-18:00, Monday-Friday)
 
 **Automation Rules**:
 - Auto-assign SEV1 → SRE team
@@ -782,6 +819,15 @@ Draft → Submitted → Under Review → CAB Review → Approved → Implementat
 - **High**: Ảnh hưởng lớn, rollback phức tạp
 - **Critical**: Ảnh hưởng toàn hệ thống, rollback khó
 
+**SLA Configuration** (chi tiết xem SLA_CONFIGURATION.md):
+- **Standard Change**: Implementation 2 ngày (pre-approved)
+- **Normal Change**: Review 2 ngày, Approval 3 ngày, Implementation 5 ngày (Total: 10 ngày)
+- **Emergency Change**: Review 2 giờ, Approval 4 giờ, Implementation 1 ngày (Total: 1.5 ngày)
+
+**Business Hours**:
+- Standard/Normal Change: Business Hours (8:00-18:00, Monday-Friday)
+- Emergency Change: 24/7 (tất cả thời gian)
+
 **Post-Implementation Review**:
 - Review sau 1 tuần implementation
 - Đánh giá success/failure
@@ -801,10 +847,13 @@ Draft → Submitted → Under Review → CAB Review → Approved → Implementat
 - Service Provisioning → PO/Manager approval
 - Information Request → Auto-approve
 
-**SLA Targets**:
-- Access Request: 1 ngày
-- Information Request: 4 giờ
-- Service Provisioning: 3 ngày
+**SLA Targets** (chi tiết xem SLA_CONFIGURATION.md):
+- **Access Request**: Response 2 giờ, Fulfillment 1 ngày (Total: 1 ngày)
+- **Information Request**: Response 1 giờ, Fulfillment 4 giờ (Total: 4 giờ)
+- **Service Provisioning**: Response 4 giờ, Fulfillment 3 ngày (Total: 3 ngày)
+- **Other**: Response 4 giờ, Fulfillment 5 ngày (Total: 5 ngày)
+
+**Business Hours**: Tất cả Request Types - Business Hours (8:00-18:00, Monday-Friday)
 
 ### 9.4. Service Order Management
 
@@ -816,6 +865,15 @@ Draft → Submitted → Under Review → CAB Review → Approved → Implementat
 5. Shipped
 6. Delivered
 7. Closed
+
+**SLA Configuration** (chi tiết xem SLA_CONFIGURATION.md):
+- **Order Received → Processing**: 2 giờ
+- **Processing → Payment Confirmed**: 1 ngày
+- **Payment Confirmed → In Production**: 1 ngày
+- **In Production → Shipped**: Theo Delivery Date trong order terms
+- **Shipped → Delivered**: Theo shipping terms
+
+**Business Hours**: Tất cả stages - Business Hours (8:00-18:00, Monday-Friday)
 
 **Integration Points**:
 - Link với Service Request (nếu có)

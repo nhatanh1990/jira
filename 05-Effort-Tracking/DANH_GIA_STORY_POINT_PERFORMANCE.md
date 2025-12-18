@@ -4,7 +4,7 @@ Tài liệu này hướng dẫn đánh giá Story Point và tính toán performa
 
 ---
 
-## 📋 MỤC LỤC
+## MỤC LỤC
 
 1. [Story Point - Khái niệm và Đánh giá](#1-story-point---khái-niệm-và-đánh-giá)
 2. [Performance Metrics cho Dự án](#2-performance-metrics-cho-dự-án)
@@ -528,50 +528,50 @@ Cross-functional Score = Số lượng issue types khác nhau đã làm
 ### 5.1. Project Performance Indicators
 
 #### Green (Good)
-- ✅ Velocity ổn định hoặc tăng
-- ✅ Sprint Goal Achievement > 90%
-- ✅ Bug Rate < 0.5 bugs/SP
-- ✅ Estimation Accuracy 80-120%
-- ✅ Epic Completion Rate > 80%
+- Velocity ổn định hoặc tăng
+- Sprint Goal Achievement > 90%
+- Bug Rate < 0.5 bugs/SP
+- Estimation Accuracy 80-120%
+- Epic Completion Rate > 80%
 
 #### Yellow (Warning)
-- ⚠️ Velocity giảm < 10%
-- ⚠️ Sprint Goal Achievement 70-90%
-- ⚠️ Bug Rate 0.5-1 bugs/SP
-- ⚠️ Estimation Accuracy 60-80% hoặc 120-150%
-- ⚠️ Epic Completion Rate 60-80%
+- Velocity giảm < 10%
+- Sprint Goal Achievement 70-90%
+- Bug Rate 0.5-1 bugs/SP
+- Estimation Accuracy 60-80% hoặc 120-150%
+- Epic Completion Rate 60-80%
 
 #### Red (Critical)
-- ❌ Velocity giảm > 20%
-- ❌ Sprint Goal Achievement < 70%
-- ❌ Bug Rate > 1 bugs/SP
-- ❌ Estimation Accuracy < 60% hoặc > 150%
-- ❌ Epic Completion Rate < 60%
+- Velocity giảm > 20%
+- Sprint Goal Achievement < 70%
+- Bug Rate > 1 bugs/SP
+- Estimation Accuracy < 60% hoặc > 150%
+- Epic Completion Rate < 60%
 
 ---
 
 ### 5.2. Individual Performance Indicators
 
 #### Green (Good)
-- ✅ Individual Velocity ổn định hoặc tăng
-- ✅ SP/Hour > Team Average
-- ✅ Bug Rate < Team Average
-- ✅ Estimation Accuracy 80-120%
-- ✅ Throughput Rate > 90%
+- Individual Velocity ổn định hoặc tăng
+- SP/Hour > Team Average
+- Bug Rate < Team Average
+- Estimation Accuracy 80-120%
+- Throughput Rate > 90%
 
 #### Yellow (Warning)
-- ⚠️ Individual Velocity giảm < 10%
-- ⚠️ SP/Hour = Team Average ± 10%
-- ⚠️ Bug Rate = Team Average ± 20%
-- ⚠️ Estimation Accuracy 60-80% hoặc 120-150%
-- ⚠️ Throughput Rate 70-90%
+- Individual Velocity giảm < 10%
+- SP/Hour = Team Average ± 10%
+- Bug Rate = Team Average ± 20%
+- Estimation Accuracy 60-80% hoặc 120-150%
+- Throughput Rate 70-90%
 
 #### Red (Critical)
-- ❌ Individual Velocity giảm > 20%
-- ❌ SP/Hour < Team Average - 20%
-- ❌ Bug Rate > Team Average + 50%
-- ❌ Estimation Accuracy < 60% hoặc > 150%
-- ❌ Throughput Rate < 70%
+- Individual Velocity giảm > 20%
+- SP/Hour < Team Average - 20%
+- Bug Rate > Team Average + 50%
+- Estimation Accuracy < 60% hoặc > 150%
+- Throughput Rate < 70%
 
 ---
 
@@ -760,7 +760,7 @@ project = PROJ AND type = Bug AND created >= -30d ORDER BY reporter
 
 ---
 
-## 📊 DASHBOARDS CHO PERFORMANCE
+## DASHBOARDS CHO PERFORMANCE
 
 ### 8.1. Project Performance Dashboard
 
@@ -784,44 +784,44 @@ project = PROJ AND type = Bug AND created >= -30d ORDER BY reporter
 
 ---
 
-## 📈 BEST PRACTICES
+## BEST PRACTICES
 
 ### 8.1. Story Point Estimation
 
 **DO**:
-- ✅ Sử dụng Planning Poker
-- ✅ So sánh với reference story
-- ✅ Xem xét độ phức tạp, rủi ro, effort
-- ✅ Đồng thuận trong team
-- ✅ Review và adjust sau mỗi sprint
+- Sử dụng Planning Poker
+- So sánh với reference story
+- Xem xét độ phức tạp, rủi ro, effort
+- Đồng thuận trong team
+- Review và adjust sau mỗi sprint
 
 **DON'T**:
-- ❌ Convert Story Points sang hours
-- ❌ So sánh Story Points giữa các team
-- ❌ Sử dụng Story Points để đánh giá individual performance (trực tiếp)
-- ❌ Thay đổi scale thường xuyên
+- Convert Story Points sang hours
+- So sánh Story Points giữa các team
+- Sử dụng Story Points để đánh giá individual performance (trực tiếp)
+- Thay đổi scale thường xuyên
 
 ---
 
 ### 8.2. Performance Evaluation
 
 **DO**:
-- ✅ Track multiple metrics (velocity, quality, efficiency)
-- ✅ So sánh với baseline và trend
-- ✅ Xem xét context (project, team, complexity)
-- ✅ Provide feedback và support
-- ✅ Celebrate improvements
+- Track multiple metrics (velocity, quality, efficiency)
+- So sánh với baseline và trend
+- Xem xét context (project, team, complexity)
+- Provide feedback và support
+- Celebrate improvements
 
 **DON'T**:
-- ❌ Chỉ dựa vào Story Points
-- ❌ So sánh trực tiếp giữa team members
-- ❌ Ignore context và factors
-- ❌ Punish low performance
-- ❌ Ignore quality metrics
+- Chỉ dựa vào Story Points
+- So sánh trực tiếp giữa team members
+- Ignore context và factors
+- Punish low performance
+- Ignore quality metrics
 
 ---
 
-## ✅ CHECKLIST
+## CHECKLIST
 
 ### Setup
 - [ ] Define Story Point scale (Fibonacci)

@@ -2,271 +2,296 @@
 
 Hệ thống Jira được thiết kế để quản lý phát triển phần mềm Agile/Kanban, ITIL Service Management, và quản lý dự án trong lĩnh vực AI và Manufacturing với khả năng track effort đầy đủ.
 
-## 📚 CẤU TRÚC TÀI LIỆU
+## CẤU TRÚC TÀI LIỆU
 
 Tài liệu được tổ chức thành các folder theo mục đích:
 
 ```
 jira/
 ├── README.md (file này)
-├── 01-Phien-Ban/              # Phiên bản và phân tích
-├── 02-Huong-Dan-Trien-Khai/   # Hướng dẫn triển khai
-├── 03-Huong-Dan-Su-Dung/      # Hướng dẫn sử dụng và training
-├── 04-Cau-Hinh/               # Cấu hình, permissions, workflows
-├── 05-Effort-Tracking/        # Effort tracking
-├── 06-ITIL-Quan-Tri/          # ITIL và quản trị
-└── 07-Reference/              # Tài liệu tham khảo
+├── index.html WEBSITE TĨNH - MỞ FILE NÀY ĐỂ XEM TÀI LIỆU
+├── generate_html.py # Script tạo file HTML
+├── 01-Phien-Ban/ # Phiên bản và phân tích
+├── 02-Huong-Dan-Trien-Khai/ # Hướng dẫn triển khai
+├── 03-Huong-Dan-Su-Dung/ # Hướng dẫn sử dụng và training
+├── 04-Cau-Hinh/ # Cấu hình, permissions, workflows, SLA
+├── 05-Effort-Tracking/ # Effort tracking
+├── 06-ITIL-Quan-Tri/ # ITIL và quản trị
+└── 07-Reference/ # Tài liệu tham khảo
 ```
 
+## SỬ DỤNG NGAY (3 BƯỚC)
+
+1. **Double-click** vào file `index.html`
+2. File sẽ mở trong trình duyệt
+3. Click vào menu bên trái để xem tài liệu
+
+** Xong!** Tất cả 20 tài liệu đã được tích hợp sẵn trong file.
+
+** Lưu ý**: Cần kết nối internet để load thư viện marked.js (chỉ để chuyển đổi Markdown). Nội dung tài liệu đã được embed sẵn trong file.
+
+** Mẹo**: Sử dụng `Ctrl+F` (hoặc `Cmd+F` trên Mac) để tìm kiếm nội dung.
+
 ---
 
-## ⭐ BẮT ĐẦU TỪ ĐÂY
+## BẮT ĐẦU TỪ ĐÂY
+
+### **CÁCH NHANH NHẤT: Sử dụng File HTML**
+
+**Double-click** vào file `index.html` để xem toàn bộ tài liệu với navigation dễ dàng!
+
+---
 
 ### 1. [01-Phien-Ban/PHIEN_BAN_CO_BAN.md](./01-Phien-Ban/PHIEN_BAN_CO_BAN.md) - Phiên bản Cơ Bản
-   - 8 Issue Types (tối ưu từ 12)
-   - 5 Dashboards
-   - Triển khai 3 tuần
-   - Dễ sử dụng, vận hành nhanh
+ - 8 Issue Types
+ - 5 Dashboards
+ - Dễ sử dụng, vận hành nhanh
+ - 8 Effort Fields đầy đủ
 
 ### 2. [01-Phien-Ban/PHIEN_BAN_NANG_CAO.md](./01-Phien-Ban/PHIEN_BAN_NANG_CAO.md) - Phiên bản Nâng Cao
-   - 39 Issue Types (tối ưu từ 47)
-   - 15+ Dashboards
-   - Triển khai 12-13 tuần
-   - Đầy đủ tính năng ITIL, Quản trị, Governance
+ - 39 Issue Types
+ - 15+ Dashboards
+ - Đầy đủ tính năng ITIL, Quản trị, Governance
+ - 8 Effort Fields + Advanced fields
 
-### 3. [01-Phien-Ban/PHAN_TICH_ISSUE_TYPES.md](./01-Phien-Ban/PHAN_TICH_ISSUE_TYPES.md) ⭐ **QUAN TRỌNG**
-   - Phân tích 4 issue types: Product Research, Product Development, Project Deployment, Project Operations
-   - Đánh giá tính cần thiết
-   - Khuyến nghị loại bỏ và thay thế bằng Epic/Story/Task
-   - Hướng dẫn sử dụng custom fields để phân biệt
+### 3. [01-Phien-Ban/PHAN_TICH_ISSUE_TYPES.md](./01-Phien-Ban/PHAN_TICH_ISSUE_TYPES.md) **QUAN TRỌNG**
+ - Phân tích 4 issue types: Product Research, Product Development, Project Deployment, Project Operations
+ - Đánh giá tính cần thiết
+ - Khuyến nghị loại bỏ và thay thế bằng Epic/Story/Task
+ - Hướng dẫn sử dụng custom fields để phân biệt
 
 ---
 
-## 📁 CHI TIẾT TỪNG FOLDER
+## CHI TIẾT TỪNG FOLDER
 
-### 📂 01-Phien-Ban/ - Phiên bản và Phân tích
+### 01-Phien-Ban/ - Phiên bản và Phân tích
 
 **Mục đích**: Định nghĩa các phiên bản và phân tích issue types
 
 **Files**:
-1. **PHIEN_BAN_CO_BAN.md** - Phiên bản Cơ Bản (8 issue types, 3 tuần triển khai)
-2. **PHIEN_BAN_NANG_CAO.md** - Phiên bản Nâng Cao (39 issue types, 12-13 tuần triển khai)
+1. **PHIEN_BAN_CO_BAN.md** - Phiên bản Cơ Bản (8 issue types)
+2. **PHIEN_BAN_NANG_CAO.md** - Phiên bản Nâng Cao (39 issue types)
 3. **PHAN_TICH_ISSUE_TYPES.md** - Phân tích và quyết định loại bỏ issue types
 
 ---
 
-### 📂 02-Huong-Dan-Trien-Khai/ - Hướng dẫn Triển khai
+### 02-Huong-Dan-Trien-Khai/ - Hướng dẫn Triển khai
 
 **Mục đích**: Hướng dẫn chi tiết cách triển khai hệ thống Jira
 
 **Files**:
 1. **HUONG_DAN_TRIEN_KHAI_JIRA.md** - Hướng dẫn triển khai cơ bản (Agile + ITIL cơ bản)
-   - Workflows, Permissions, Custom Fields
-   - Dashboards, Reports
-   - GitLab integration
+ - Workflows, Permissions, Custom Fields
+ - Dashboards, Reports
+ - GitLab integration
 
 2. **CHECKLIST_TRIEN_KHAI.md** - Checklist chi tiết từng bước triển khai
-   - 15 phases với tasks cụ thể
-   - Step-by-step implementation
+ - 15 phases với tasks cụ thể
+ - Step-by-step implementation
 
-3. **KICH_BAN_TRIEN_KHAI.md** ⭐ **KỊCH BẢN TRIỂN KHAI**
-   - Kịch bản triển khai cho các tình huống khác nhau
-   - Startup/SMB, Enterprise, Migration, Multi-team, Phased Rollout
-   - Timeline và checklist chi tiết
+3. **KICH_BAN_TRIEN_KHAI.md** **KỊCH BẢN TRIỂN KHAI**
+ - Kịch bản triển khai cho các tình huống khác nhau
+ - Startup/SMB, Enterprise, Migration, Multi-team, Phased Rollout
+ - Timeline và checklist chi tiết
 
 ---
 
-### 📂 03-Huong-Dan-Su-Dung/ - Hướng dẫn Sử dụng và Training
+### 03-Huong-Dan-Su-Dung/ - Hướng dẫn Sử dụng và Training
 
 **Mục đích**: Hướng dẫn sử dụng cho users và tài liệu training
 
 **Files**:
-1. **HUONG_DAN_MEMBER_MOI.md** ⭐ **HƯỚNG DẪN**
-   - Hướng dẫn cho thành viên mới
-   - Các thao tác cơ bản
-   - Hướng dẫn theo role (Developer, QA, PO, Support, SRE/DevOps)
-   - Effort tracking
-   - Tips & Best Practices
-   - FAQ
+1. **HUONG_DAN_MEMBER_MOI.md** **HƯỚNG DẪN**
+ - Hướng dẫn cho thành viên mới
+ - Các thao tác cơ bản
+ - Hướng dẫn theo role (Developer, QA, PO, Support, SRE/DevOps)
+ - Effort tracking
+ - Tips & Best Practices
+ - FAQ
 
-2. **KICH_BAN_SU_DUNG.md** ⭐ **KỊCH BẢN**
-   - Kịch bản sử dụng thực tế cho từng role
-   - Use cases chi tiết (Agile, ITIL, Effort Tracking, Product Lifecycle)
-   - Step-by-step hướng dẫn
+2. **KICH_BAN_SU_DUNG.md** **KỊCH BẢN**
+ - Kịch bản sử dụng thực tế cho từng role
+ - Use cases chi tiết (Agile, ITIL, Effort Tracking, Product Lifecycle)
+ - Step-by-step hướng dẫn
 
-3. **TAI_LIEU_TRAINING.md** ⭐ **TRAINING**
-   - Tài liệu training chi tiết cho tất cả roles
-   - Modules và assessment
-   - Training schedule
-   - Certification
+3. **TAI_LIEU_TRAINING.md** **TRAINING**
+ - Tài liệu training chi tiết cho tất cả roles
+ - Modules và assessment
+ - Training schedule
+ - Certification
 
 ---
 
-### 📂 04-Cau-Hinh/ - Cấu hình, Permissions, Workflows
+### 04-Cau-Hinh/ - Cấu hình, Permissions, Workflows
 
 **Mục đích**: Cấu hình hệ thống, phân quyền, và workflows
 
 **Files**:
-1. **MA_TRAN_PHAN_QUYEN.md** ⭐ **QUAN TRỌNG**
-   - Ma trận phân quyền Role × Issue Type
-   - Chi tiết quyền hạn cho từng role
-   - Phân quyền cho cả 2 phiên bản (Cơ Bản & Nâng Cao)
+1. **MA_TRAN_PHAN_QUYEN.md** **QUAN TRỌNG**
+ - Ma trận phân quyền Role × Issue Type
+ - Chi tiết quyền hạn cho từng role
+ - Phân quyền cho cả 2 phiên bản (Cơ Bản & Nâng Cao)
 
-2. **WORKFLOW_DIAGRAMS.md** - Sơ đồ workflows
-   - Workflow diagrams
-   - Workflow relationships
-   - Status mapping
+2. **SLA_CONFIGURATION.md** **QUAN TRỌNG - SLA**
+ - Cấu hình SLA chi tiết cho tất cả 4 ITIL issue types cơ bản
+ - SLA targets, automation rules, escalation rules
+ - Custom fields, time tracking, reporting
+ - JQL queries cho SLA monitoring
 
-3. **role.txt** - Định nghĩa các Role và Permissions
-   - 7 roles cơ bản
-   - Quyền hạn cho từng role
+3. **WORKFLOW_DIAGRAMS.md** - Sơ đồ workflows
+ - Workflow diagrams
+ - Workflow relationships
+ - Status mapping
+
+4. **role.txt** - Định nghĩa các Role và Permissions
+ - 7 roles cơ bản
+ - Quyền hạn cho từng role
+
+**Lưu ý**: Tất cả tài liệu đã được tích hợp vào file `index.html` để dễ dàng xem và điều hướng.
 
 ---
 
-### 📂 05-Effort-Tracking/ - Effort Tracking
+### 05-Effort-Tracking/ - Effort Tracking
 
 **Mục đích**: Effort tracking hoàn thiện cho tất cả issue types
 
 **Files**:
-1. **EFFORT_TRACKING_HOAN_THIEN.md** ⭐ **QUAN TRỌNG**
-   - Effort tracking hoàn thiện cho TẤT CẢ issue types (39 types Nâng cao / 8 types Cơ bản)
-   - 8 effort fields: Research, Development, Testing, Deployment, Operations, Review, Documentation, Coordination
-   - Custom fields cho mỗi issue type
-   - Automation rules
-   - JQL queries
+1. **EFFORT_TRACKING_HOAN_THIEN.md** **QUAN TRỌNG**
+ - Effort tracking hoàn thiện cho TẤT CẢ issue types (39 types Nâng cao / 8 types Cơ bản)
+ - 8 effort fields: Research, Development, Testing, Deployment, Operations, Review, Documentation, Coordination
+ - Custom fields cho mỗi issue type
+ - Automation rules
+ - JQL queries
 
-2. **DANH_GIA_HOAN_THIEN.md** ⭐ **ĐÁNH GIÁ**
-   - Đánh giá mức độ hoàn thiện
-   - Phân tích điểm mạnh/yếu
-   - Khuyến nghị cải thiện
+2. **DANH_GIA_HOAN_THIEN.md** **ĐÁNH GIÁ**
+ - Đánh giá mức độ hoàn thiện
+ - Phân tích điểm mạnh/yếu
+ - Khuyến nghị cải thiện
 
-3. **DANH_GIA_STORY_POINT_PERFORMANCE.md** ⭐ **PERFORMANCE**
-   - Đánh giá Story Point và Performance
-   - Performance metrics cho dự án (Velocity, Throughput, Quality, Efficiency)
-   - Performance metrics cho con người (Individual Velocity, SP/Hour, Bug Rate, Estimation Accuracy)
-   - Velocity tracking và Performance Indicators
-   - Báo cáo Performance và Dashboards
-   - Custom Fields & Automation
-   - JQL Queries cho Performance
+3. **DANH_GIA_STORY_POINT_PERFORMANCE.md** **PERFORMANCE**
+ - Đánh giá Story Point và Performance
+ - Performance metrics cho dự án (Velocity, Throughput, Quality, Efficiency)
+ - Performance metrics cho con người (Individual Velocity, SP/Hour, Bug Rate, Estimation Accuracy)
+ - Velocity tracking và Performance Indicators
+ - Báo cáo Performance và Dashboards
+ - Custom Fields & Automation
+ - JQL Queries cho Performance
 
 ---
 
-### 📂 06-ITIL-Quan-Tri/ - ITIL và Quản trị
+### 06-ITIL-Quan-Tri/ - ITIL và Quản trị
 
 **Mục đích**: ITIL processes đầy đủ và các phương pháp quản trị
 
 **Files**:
 1. **BO_SUNG_ITIL_VA_QUAN_TRI.md** - ITIL & Quản trị nâng cao
-   - ITIL processes đầy đủ (16 processes)
-   - Phương pháp quản trị (Kanban, DevOps, Lean, Risk, Portfolio)
-   - Quản lý kinh doanh (Financial, Customer, Demand)
-   - Governance & Compliance
+ - ITIL processes đầy đủ (16 processes)
+ - Phương pháp quản trị (Kanban, DevOps, Lean, Risk, Portfolio)
+ - Quản lý kinh doanh (Financial, Customer, Demand)
+ - Governance & Compliance
 
 ---
 
-### 📂 07-Reference/ - Tài liệu Tham khảo
+### 07-Reference/ - Tài liệu Tham khảo
 
 **Mục đích**: Tài liệu tham khảo, queries, troubleshooting, và báo cáo
 
 **Files**:
 1. **JQL_QUERIES.md** - Thư viện JQL queries
-   - Queries cho Agile, ITIL, Effort tracking
-   - Queries cho từng role
+ - Queries cho Agile, ITIL, Effort tracking
+ - Queries cho từng role
 
-2. **TROUBLESHOOTING_FAQ.md** ⭐ **HỖ TRỢ**
-   - FAQ - Câu hỏi thường gặp
-   - Troubleshooting - Xử lý sự cố
-   - Best Practices
-   - Performance Optimization
-   - Security Considerations
-   - Backup & Recovery
+2. **TROUBLESHOOTING_FAQ.md** **HỖ TRỢ**
+ - FAQ - Câu hỏi thường gặp
+ - Troubleshooting - Xử lý sự cố
+ - Best Practices
+ - Performance Optimization
+ - Security Considerations
+ - Backup & Recovery
 
-3. **BAO_CAO_TONG_HOP.md** ⭐ **BÁO CÁO**
-   - Báo cáo Agile/Development
-   - Báo cáo ITIL/Service Management
-   - Báo cáo Effort Tracking
-   - Báo cáo Performance
-   - Báo cáo Management
+3. **BAO_CAO_TONG_HOP.md** **BÁO CÁO**
+ - Báo cáo Agile/Development
+ - Báo cáo ITIL/Service Management
+ - Báo cáo Effort Tracking
+ - Báo cáo Performance
+ - Báo cáo Management
 
 ---
 
-## 🎯 TỔNG QUAN
+## TỔNG QUAN
 
 ### Tính Năng Chính
 
 #### Agile/Kanban:
-- ✅ Epic, Story, Task, Bug management
-- ✅ Sprint planning & tracking
-- ✅ Velocity tracking
-- ✅ Kanban boards với WIP limits
-- ✅ Code review workflow
-- ✅ GitLab integration
+- Epic, Story, Task, Bug management
+- Sprint planning & tracking
+- Velocity tracking
+- Kanban boards với WIP limits
+- Code review workflow
+- GitLab integration
 
 #### ITIL Service Management:
-- ✅ Incident Management với SLA
-- ✅ Change Management với CAB approval
-- ✅ Service Request management
-- ✅ Service Order management
-- ✅ Problem Management (Nâng cao)
-- ✅ Knowledge Management (Nâng cao)
-- ✅ Service Level Management (Nâng cao)
-- ✅ Availability, Capacity, Security Management (Nâng cao)
-- ✅ Asset Management, CMDB (Nâng cao)
+- Incident Management với SLA
+- Change Management với CAB approval
+- Service Request management
+- Service Order management
+- Problem Management (Nâng cao)
+- Knowledge Management (Nâng cao)
+- Service Level Management (Nâng cao)
+- Availability, Capacity, Security Management (Nâng cao)
+- Asset Management, CMDB (Nâng cao)
 
 #### Effort Tracking:
-- ✅ Research Effort (Nghiên cứu)
-- ✅ Development Effort (Phát triển)
-- ✅ Testing Effort (Testing)
-- ✅ Deployment Effort (Triển khai)
-- ✅ Operations Effort (Vận hành)
-- ✅ Review Effort (Review)
-- ✅ Documentation Effort (Documentation)
-- ✅ Coordination Effort (Coordination)
-- ✅ Total Effort (calculated - 8 fields)
-- ✅ Effort % by phase
-- ✅ Effort Variance (Estimated vs Actual)
-- ✅ Effort Efficiency metrics
+- Research Effort (Nghiên cứu)
+- Development Effort (Phát triển)
+- Testing Effort (Testing)
+- Deployment Effort (Triển khai)
+- Operations Effort (Vận hành)
+- Review Effort (Review)
+- Documentation Effort (Documentation)
+- Coordination Effort (Coordination)
+- Total Effort (calculated - 8 fields)
+- Effort % by phase
+- Effort Variance (Estimated vs Actual)
+- Effort Efficiency metrics
 
 #### Quản Trị (Nâng cao):
-- ✅ Risk Management
-- ✅ Portfolio Management
-- ✅ Financial Management
-- ✅ Business Relationship Management
-- ✅ Governance & Compliance
+- Risk Management
+- Portfolio Management
+- Financial Management
+- Business Relationship Management
+- Governance & Compliance
 
 ---
 
-## 📊 SO SÁNH 2 PHIÊN BẢN
+## SO SÁNH 2 PHIÊN BẢN
 
 | Tiêu chí | Cơ Bản | Nâng Cao |
 |----------|--------|----------|
-| **Issue Types** | 8 (tối ưu) | 39 (tối ưu) |
+| **Issue Types** | 8 | 39 |
 | **Workflows** | 9 | 47 |
 | **Dashboards** | 5 | 15+ |
 | **Roles** | 7 | 12+ |
 | **Integrations** | 2 | 6+ |
-| **Thời gian triển khai** | 3 tuần | 12-13 tuần |
 | **Phù hợp** | Startup, SMB | Enterprise, Large org |
 
 ---
 
-## 🚀 QUYẾT ĐỊNH LỰA CHỌN
+## QUYẾT ĐỊNH LỰA CHỌN
 
 ### Chọn Phiên Bản Cơ Bản nếu:
-- ✅ Team < 50 users
-- ✅ Cần triển khai nhanh (3 tuần)
-- ✅ Yêu cầu đơn giản (Agile + ITIL cơ bản)
-- ✅ Startup, SMB
+- Team < 50 users
+- Yêu cầu đơn giản (Agile + ITIL cơ bản)
+- Startup, SMB
 
 ### Chọn Phiên Bản Nâng Cao nếu:
-- ✅ Team > 100 users
-- ✅ Có thể triển khai trong 3 tháng
-- ✅ Yêu cầu đầy đủ (ITIL + Quản trị + Governance)
-- ✅ Enterprise organization
+- Team > 100 users
+- Yêu cầu đầy đủ (ITIL + Quản trị + Governance)
+- Enterprise organization
 
 ---
 
-## 📋 CẤU TRÚC EFFORT TRACKING
+## CẤU TRÚC EFFORT TRACKING
 
 ### Các Giai Đoạn Effort:
 1. **Research Effort** (Nghiên cứu) - Phân tích, nghiên cứu, thiết kế
@@ -295,7 +320,7 @@ jira/
 
 ---
 
-## 📈 DASHBOARDS
+## DASHBOARDS
 
 ### Phiên Bản Cơ Bản (5 dashboards):
 1. Executive Dashboard
@@ -319,7 +344,7 @@ jira/
 
 ---
 
-## 🔧 INTEGRATIONS
+## INTEGRATIONS
 
 ### Phiên Bản Cơ Bản:
 - GitLab
@@ -335,7 +360,7 @@ jira/
 
 ---
 
-## ✅ NEXT STEPS
+## NEXT STEPS
 
 ### Cho Admin/Manager:
 1. **Chọn phiên bản**: Đọc [01-Phien-Ban/PHIEN_BAN_CO_BAN.md](./01-Phien-Ban/PHIEN_BAN_CO_BAN.md) hoặc [01-Phien-Ban/PHIEN_BAN_NANG_CAO.md](./01-Phien-Ban/PHIEN_BAN_NANG_CAO.md)
@@ -354,7 +379,7 @@ jira/
 
 ---
 
-## 📞 SUPPORT
+## SUPPORT
 
 - **FAQ & Troubleshooting**: Xem [07-Reference/TROUBLESHOOTING_FAQ.md](./07-Reference/TROUBLESHOOTING_FAQ.md)
 - **JQL Queries**: Sử dụng [07-Reference/JQL_QUERIES.md](./07-Reference/JQL_QUERIES.md)
@@ -364,4 +389,4 @@ jira/
 
 ---
 
-**Chúc bạn triển khai thành công! 🚀**
+**Chúc bạn triển khai thành công! **

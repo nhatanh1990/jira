@@ -4,7 +4,7 @@ Tài liệu này tổng hợp các báo cáo và metrics quan trọng trong hệ
 
 ---
 
-## 📋 MỤC LỤC
+## MỤC LỤC
 
 1. [Báo cáo Agile/Development](#1-báo-cáo-agiledevelopment)
 2. [Báo cáo ITIL/Service Management](#2-báo-cáo-itilservice-management)
@@ -281,7 +281,7 @@ project = PROJ AND "Work Type" = Project AND Customer is not EMPTY AND "Total Ef
 
 ---
 
-## 📊 DASHBOARD CONFIGURATION
+## DASHBOARD CONFIGURATION
 
 ### Executive Dashboard
 
@@ -327,7 +327,7 @@ project = PROJ AND "Work Type" = Project AND Customer is not EMPTY AND "Total Ef
 
 ---
 
-## 📈 REPORTING SCHEDULE
+## REPORTING SCHEDULE
 
 ### Daily Reports
 - Incident summary

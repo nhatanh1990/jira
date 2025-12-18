@@ -23,17 +23,17 @@ Phân tích 4 issue types:
 #### So sánh với Epic/Story:
 
 **Epic có thể thay thế?**
-- ✅ Epic có thể chứa nhiều Stories về research
-- ✅ Epic có thể track Total Research Effort từ children
-- ✅ Epic có thể có custom fields: Research Phase, Research Status
+- Epic có thể chứa nhiều Stories về research
+- Epic có thể track Total Research Effort từ children
+- Epic có thể có custom fields: Research Phase, Research Status
 
 **Story có thể thay thế?**
-- ✅ Story có thể là "Research user needs for feature X"
-- ✅ Story có thể track Research Effort
-- ✅ Story có thể có acceptance criteria về research deliverables
+- Story có thể là "Research user needs for feature X"
+- Story có thể track Research Effort
+- Story có thể có acceptance criteria về research deliverables
 
 **Kết luận**: 
-- ⚠️ **KHÔNG CẦN THIẾT** - Có thể dùng Epic/Story với custom fields
+- **KHÔNG CẦN THIẾT** - Có thể dùng Epic/Story với custom fields
 - Epic cho research projects lớn
 - Story cho research tasks cụ thể
 
@@ -48,17 +48,17 @@ Phân tích 4 issue types:
 #### So sánh với Epic/Story:
 
 **Epic có thể thay thế?**
-- ✅ Epic có thể là "Develop Feature X"
-- ✅ Epic có thể track Total Development Effort từ children
-- ✅ Epic có thể có custom fields: Development Phase, Development Status
+- Epic có thể là "Develop Feature X"
+- Epic có thể track Total Development Effort từ children
+- Epic có thể có custom fields: Development Phase, Development Status
 
 **Story có thể thay thế?**
-- ✅ Story là cách chuẩn để quản lý development
-- ✅ Story có thể track Development Effort
-- ✅ Story có thể có acceptance criteria, story points
+- Story là cách chuẩn để quản lý development
+- Story có thể track Development Effort
+- Story có thể có acceptance criteria, story points
 
 **Kết luận**:
-- ❌ **KHÔNG CẦN THIẾT** - Story đã là cách chuẩn để quản lý development
+- **KHÔNG CẦN THIẾT** - Story đã là cách chuẩn để quản lý development
 - Story là issue type chính cho development
 - Epic để quản lý nhóm Stories
 
@@ -73,22 +73,22 @@ Phân tích 4 issue types:
 #### So sánh với Epic/Story:
 
 **Epic có thể thay thế?**
-- ✅ Epic có thể là "Deploy Project X for Customer Y"
-- ✅ Epic có thể track Total Deployment Effort từ children
-- ✅ Epic có thể có custom fields: Deployment Phase, Customer, Deployment Date
+- Epic có thể là "Deploy Project X for Customer Y"
+- Epic có thể track Total Deployment Effort từ children
+- Epic có thể có custom fields: Deployment Phase, Customer, Deployment Date
 
 **Story có thể thay thế?**
-- ✅ Story có thể là "Setup environment for Customer X"
-- ✅ Story có thể track Deployment Effort
-- ✅ Story có thể có acceptance criteria về deployment
+- Story có thể là "Setup environment for Customer X"
+- Story có thể track Deployment Effort
+- Story có thể có acceptance criteria về deployment
 
 **Task có thể thay thế?**
-- ✅ Task có thể là "Deploy to production", "Migrate data", "Training"
-- ✅ Task có thể track Deployment Effort
-- ✅ Task phù hợp cho deployment tasks cụ thể
+- Task có thể là "Deploy to production", "Migrate data", "Training"
+- Task có thể track Deployment Effort
+- Task phù hợp cho deployment tasks cụ thể
 
 **Kết luận**:
-- ⚠️ **CÓ THỂ KHÔNG CẦN THIẾT** - Có thể dùng Epic/Story/Task với custom fields
+- **CÓ THỂ KHÔNG CẦN THIẾT** - Có thể dùng Epic/Story/Task với custom fields
 - Epic cho deployment project lớn
 - Story/Task cho deployment tasks cụ thể
 - **NHƯNG**: Nếu deployment là process phức tạp, có thể cần issue type riêng
@@ -104,22 +104,22 @@ Phân tích 4 issue types:
 #### So sánh với Epic/Story/Task:
 
 **Epic có thể thay thế?**
-- ✅ Epic có thể là "Operations for Customer X"
-- ✅ Epic có thể track Total Operations Effort từ children
-- ✅ Epic có thể có custom fields: Operations Type, SLA Compliance
+- Epic có thể là "Operations for Customer X"
+- Epic có thể track Total Operations Effort từ children
+- Epic có thể có custom fields: Operations Type, SLA Compliance
 
 **Story/Task có thể thay thế?**
-- ✅ Task có thể là "Support ticket", "Maintenance task", "Optimization task"
-- ✅ Task có thể track Operations Effort
-- ✅ Task phù hợp cho operations tasks cụ thể
+- Task có thể là "Support ticket", "Maintenance task", "Optimization task"
+- Task có thể track Operations Effort
+- Task phù hợp cho operations tasks cụ thể
 
 **Service Request có thể thay thế?**
-- ✅ Service Request đã có sẵn trong ITIL
-- ✅ Service Request có thể track Operations Effort
-- ✅ Service Request phù hợp cho customer requests
+- Service Request đã có sẵn trong ITIL
+- Service Request có thể track Operations Effort
+- Service Request phù hợp cho customer requests
 
 **Kết luận**:
-- ❌ **KHÔNG CẦN THIẾT** - Có thể dùng Task hoặc Service Request
+- **KHÔNG CẦN THIẾT** - Có thể dùng Task hoặc Service Request
 - Task cho operations tasks
 - Service Request cho customer service requests
 - Epic để quản lý nhóm operations tasks
@@ -132,10 +132,10 @@ Phân tích 4 issue types:
 
 | Issue Type | Cần thiết? | Có thể thay thế bằng | Khuyến nghị |
 |------------|------------|---------------------|-------------|
-| **Product Research** | ❌ Không | Epic/Story | **LOẠI BỎ** - Dùng Epic/Story |
-| **Product Development** | ❌ Không | Story | **LOẠI BỎ** - Story đã đủ |
-| **Project Deployment** | ⚠️ Tùy chọn | Epic/Story/Task | **CÓ THỂ LOẠI BỎ** - Dùng Epic/Story/Task |
-| **Project Operations** | ❌ Không | Task/Service Request | **LOẠI BỎ** - Dùng Task/Service Request |
+| **Product Research** | Không | Epic/Story | **LOẠI BỎ** - Dùng Epic/Story |
+| **Product Development** | Không | Story | **LOẠI BỎ** - Story đã đủ |
+| **Project Deployment** | Tùy chọn | Epic/Story/Task | **CÓ THỂ LOẠI BỎ** - Dùng Epic/Story/Task |
+| **Project Operations** | Không | Task/Service Request | **LOẠI BỎ** - Dùng Task/Service Request |
 
 ---
 
@@ -144,23 +144,23 @@ Phân tích 4 issue types:
 ### Lý do:
 
 1. **Trùng lặp chức năng**:
-   - Product Research/Development có thể dùng Epic/Story
-   - Project Deployment có thể dùng Epic/Story/Task
-   - Project Operations có thể dùng Task/Service Request
+ - Product Research/Development có thể dùng Epic/Story
+ - Project Deployment có thể dùng Epic/Story/Task
+ - Project Operations có thể dùng Task/Service Request
 
 2. **Epic/Story đã đủ mạnh**:
-   - Epic có thể track effort từ children
-   - Story có thể track effort trực tiếp
-   - Custom fields có thể phân biệt loại công việc
+ - Epic có thể track effort từ children
+ - Story có thể track effort trực tiếp
+ - Custom fields có thể phân biệt loại công việc
 
 3. **Đơn giản hóa hệ thống**:
-   - Giảm số lượng issue types
-   - Dễ sử dụng hơn
-   - Dễ training hơn
+ - Giảm số lượng issue types
+ - Dễ sử dụng hơn
+ - Dễ training hơn
 
 4. **Best practices**:
-   - Epic/Story là cách chuẩn trong Agile
-   - Không cần tạo issue types riêng cho mỗi phase
+ - Epic/Story là cách chuẩn trong Agile
+ - Không cần tạo issue types riêng cho mỗi phase
 
 ---
 
@@ -184,9 +184,9 @@ Phân tích 4 issue types:
 
 **Ví dụ**:
 - Epic: "Research AI Features for Manufacturing"
-  - Story: "Research user needs for AI quality control"
-  - Story: "Research competitor AI solutions"
-  - Story: "Research technical feasibility"
+ - Story: "Research user needs for AI quality control"
+ - Story: "Research competitor AI solutions"
+ - Story: "Research technical feasibility"
 
 ---
 
@@ -205,9 +205,9 @@ Phân tích 4 issue types:
 
 **Ví dụ**:
 - Epic: "Develop AI Quality Control Feature"
-  - Story: "Implement ML model for defect detection"
-  - Story: "Create API for quality control"
-  - Story: "Build UI for quality dashboard"
+ - Story: "Implement ML model for defect detection"
+ - Story: "Create API for quality control"
+ - Story: "Build UI for quality dashboard"
 
 ---
 
@@ -231,10 +231,10 @@ Phân tích 4 issue types:
 
 **Ví dụ**:
 - Epic: "Deploy AI System for Customer ABC"
-  - Story: "Setup production environment"
-  - Task: "Migrate customer data"
-  - Task: "Train customer users"
-  - Task: "Go-live support"
+ - Story: "Setup production environment"
+ - Task: "Migrate customer data"
+ - Task: "Train customer users"
+ - Task: "Go-live support"
 
 ---
 
@@ -276,24 +276,24 @@ Phân tích 4 issue types:
 8. Service Order
 
 **Loại bỏ**:
-- ❌ Product Research
-- ❌ Product Development
-- ❌ Project Deployment
-- ❌ Project Operations
+- Product Research
+- Product Development
+- Project Deployment
+- Project Operations
 
-### Phiên Bản Nâng Cao: 43 Issue Types (từ 47)
+### Phiên Bản Nâng Cao: 39 Issue Types (từ 47, loại bỏ 8 types)
 
 **Loại bỏ**:
-- ❌ Product Research
-- ❌ Product Development
-- ❌ Product Deployment
-- ❌ Product Operations
+- Product Research
+- Product Development
+- Product Deployment
+- Product Operations
+- Project Research
+- Project Development
+- Project Deployment
+- Project Operations
 
-**Giữ lại**:
-- ✅ Project Research (nếu cần, hoặc dùng Epic/Story)
-- ✅ Project Development (nếu cần, hoặc dùng Story)
-- ✅ Project Deployment (nếu cần, hoặc dùng Epic/Story/Task)
-- ✅ Project Operations (nếu cần, hoặc dùng Task/Service Request)
+**Thay thế bằng**: Epic/Story/Task với custom fields (Work Type, Phase, Customer)
 
 ---
 
@@ -329,7 +329,7 @@ Phân tích 4 issue types:
 
 ## KHUYẾN NGHỊ CUỐI CÙNG
 
-### ✅ LOẠI BỎ 4 ISSUE TYPES
+### LOẠI BỎ 4 ISSUE TYPES
 
 **Lý do**:
 1. Epic/Story/Task đã đủ mạnh để thay thế
@@ -345,8 +345,8 @@ Phân tích 4 issue types:
 
 **Kết quả**:
 - Giảm từ 12 → 8 issue types (Cơ bản)
-- Giảm từ 47 → 43 issue types (Nâng cao)
-- Vẫn track effort đầy đủ
+- Giảm từ 47 → 39 issue types (Nâng cao)
+- Vẫn track effort đầy đủ (8 effort fields)
 - Hệ thống đơn giản hơn, dễ sử dụng hơn
 
 ---
